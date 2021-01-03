@@ -12,7 +12,7 @@ public class ConsumerDemo {
         Consumer n = t -> System.out.println(t+" "+t);
         //Vi matar konsumenten direkt med "Hej", utan att gå via foreach
         n.accept("Hej"); 
-
+/*
         List<String> l = new ArrayList<>();
         l.add("aaaa");
         l.add("bbbb");
@@ -26,8 +26,8 @@ public class ConsumerDemo {
         //Specialare
         // :: låter oss referera en metod hos en klass
         l.forEach(System.out::println);
-
+*/
     }
-    
+
 
 }

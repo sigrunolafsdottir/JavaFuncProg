@@ -14,12 +14,14 @@ public class StringOperatorDemo {
         
         print(f1, "En jättelång sträng");
         print(f2, "En jättelång sträng");
-        
+ /*
         print(s -> s.substring(2), "En jättelång sträng");
         print(s -> s.replace(s.charAt(0), 
                 s.charAt(s.length() -1)), 
                 "En jättelång sträng");
-        
+
+        */
+
 //        print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
 //        print(f2.andThen(f1), "En jättelångsträng");
 
