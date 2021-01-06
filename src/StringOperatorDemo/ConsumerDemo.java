@@ -9,10 +9,10 @@ public class ConsumerDemo {
 
     
     public static void main(String[] args) {
-        Consumer n = t -> System.out.println(t+" "+t);
+        Consumer doubleText = t -> System.out.println(t+" "+t);
         //Vi matar konsumenten direkt med "Hej", utan att gå via foreach
-        n.accept("Hej"); 
-/*
+      //  doubleText.accept("Hej");
+
         List<String> l = new ArrayList<>();
         l.add("aaaa");
         l.add("bbbb");
@@ -20,13 +20,14 @@ public class ConsumerDemo {
         l.forEach(e -> System.out.println(e));
         System.out.println();
 
-        l.forEach(n);
+        l.forEach(doubleText);
+        l.forEach(t -> System.out.println(t+" "+t));
         System.out.println();
 
         //Specialare
         // :: låter oss referera en metod hos en klass
         l.forEach(System.out::println);
-*/
+
     }
 
 

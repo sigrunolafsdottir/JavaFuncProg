@@ -10,6 +10,8 @@ public class MathOperationMain {
     
    public static void main(String args[]) {
 
+      int test = 4;
+
       MathOperation addition = (a, b) -> a + b;
 		
       MathOperation subtraction = (a, b) -> a - b;
@@ -17,7 +19,8 @@ public class MathOperationMain {
       //bara för att demonstrera giltig kod, tilldelningen av j tillför inget
       //med krullparanteser måste man ha en explicit return
       MathOperation multiplication = (int a, int b) 
-              -> { int j = 5; return a * b; };
+              -> { int j = 5;
+              return a * b; };
 		
       MathOperation division = (a,  b) -> a / b;
 
@@ -33,6 +36,10 @@ public class MathOperationMain {
 
       
       //Uppgift 2b
+      //MathOperation addition = (a, b) -> a + b;
+      //MathOperation subtraction = (a, b) -> a - b;
+      //(i, j) -> m.operation(i, j) + operation(i, j);
+      // (10-5)+(10+5) = 20
       MathOperation justTesting = addition.add(subtraction);
       System.out.println(justTesting.operation(10,5));
 		

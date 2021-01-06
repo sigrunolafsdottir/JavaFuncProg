@@ -11,21 +11,25 @@ public class StringOperatorDemo {
         StringOperator f1 = s -> s.substring(2);
         StringOperator f2 = s -> s.replace(s.charAt(0),
                 s.charAt(s.length() -1));
-        
+
+        StringOperator f3 = s -> s.toUpperCase();
+  /*
         print(f1, "En jättelång sträng");
         print(f2, "En jättelång sträng");
- /*
+        print(f3, "hejsan hoppsan");
+
         print(s -> s.substring(2), "En jättelång sträng");
         print(s -> s.replace(s.charAt(0), 
                 s.charAt(s.length() -1)), 
                 "En jättelång sträng");
 
-        */
+*/
 
-//        print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
-//        print(f2.andThen(f1), "En jättelångsträng");
+        print(f1.andThen(f2), "En jättelångsträng");
+        print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
+        print(f2.andThen(f1), "En jättelångsträng");
 
-        //ättelångsträng
+        // ättelångsträng
 //gjättelångsträng
 // jättelångsträng
 
