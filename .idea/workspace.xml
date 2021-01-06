@@ -8,6 +8,10 @@
       <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/kotlin-test-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/kotlin-test.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/Inlämningsupgift/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/Inlämningsupgift/Database.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/Inlämningsupgift/Question.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/Inlämningsupgift/RewriteMe.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaDemo/LambdaDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaDemo/LambdaDemoPerson$Person.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaDemo/LambdaDemoPerson.class" afterDir="false" />
@@ -38,8 +42,10 @@
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaParameterDemo/ListenerDemo$1.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaParameterDemo/ListenerDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/META-INF/JavaFuncProg.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/FlatmapDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/MapDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/StreamDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/PrimitiveDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/ReduceDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/StreamDemo2.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/totaleclipse.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StringOperatorDemo/ConsumerDemo.class" afterDir="false" />
@@ -66,6 +72,7 @@
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg2c_SingleDigitOperation/SingleDigitOperationMain.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg5_URLWordCount/ÖvnUppg5_URLWordCount.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg5_URLWordCount/ÖvnUppg5_URLWordCountB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/Inlämningsupgift/RewriteMeTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/LambdaKata/FlattenCollectionTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/LambdaKata/GetOldestPersonTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/LambdaKata/GetStatsTest.class" afterDir="false" />
@@ -88,15 +95,8 @@
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/LambdaKataFacit/UpperCaseTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/META-INF/JavaFuncProg.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LambdaParameterDemo/EmptyParameterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LambdaParameterDemo/EmptyParameterDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StreamDemo/StreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/MapLambdaDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringOperatorDemo/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringOperatorDemo/ConsumerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringOperatorDemo/PredicateExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringOperatorDemo/PredicateExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringOperatorDemo/StringOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringOperatorDemo/StringOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringOperatorDemo/StringOperatorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringOperatorDemo/StringOperatorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterface/MathOperationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterface/MathOperationMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterfaceFacit/MathOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterfaceFacit/MathOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterfaceFacit/MathOperationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterfaceFacit/MathOperationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,44 +110,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapLambdaDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StreamDemo/StreamDemo2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="78" selection-start-line="78" selection-end-line="87" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+            <state relative-caret-position="357">
+              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-              <folding>
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#2005#2006#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/StreamDemo/totaleclipse.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -173,9 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/LambdaKataFacit/FlattenCollectionTest.java" />
-        <option value="$PROJECT_DIR$/test/LambdaKataFacit/GetOldestPersonTest.java" />
-        <option value="$PROJECT_DIR$/test/LambdaKataFacit/GetStatsTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/KidsNamesTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/LessThanFourTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/PartitioningTest.java" />
@@ -224,6 +204,9 @@
         <option value="$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/MapGroupByDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/MapPartitioningDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" />
       </list>
     </option>
   </component>
@@ -356,9 +339,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrimitiveDemo">
-    <configuration name="FlatmapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.FlatmapDemo" />
+  <component name="RunManager" selected="Application.MapDemo">
+    <configuration name="JoiningDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamDemo.JoiningDemo" />
       <module name="JavaFuncProg" />
       <extension name="coverage">
         <pattern>
@@ -370,8 +353,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapLambdaDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.MapLambdaDemo" />
+    <configuration name="MapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamDemo.MapDemo" />
+      <module name="JavaFuncProg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapGroupByDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamDemo.MapGroupByDemo" />
+      <module name="JavaFuncProg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapPartitioningDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamDemo.MapPartitioningDemo" />
       <module name="JavaFuncProg" />
       <extension name="coverage">
         <pattern>
@@ -396,39 +405,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.ReduceDemo" />
-      <module name="JavaFuncProg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ÖvnUppg1a_filter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ÖvnUppg1_BasicStreams.ÖvnUppg1a_filter" />
-      <module name="JavaFuncProg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ÖvnUppg1_BasicStreams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapDemo" />
+        <item itemvalue="Application.MapPartitioningDemo" />
+        <item itemvalue="Application.MapGroupByDemo" />
+        <item itemvalue="Application.JoiningDemo" />
         <item itemvalue="Application.PrimitiveDemo" />
-        <item itemvalue="Application.ReduceDemo" />
-        <item itemvalue="Application.FlatmapDemo" />
-        <item itemvalue="Application.MapLambdaDemo" />
-        <item itemvalue="Application.ÖvnUppg1a_filter" />
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +441,7 @@
       <workItem from="1607605970468" duration="1370000" />
       <workItem from="1609674915479" duration="1807000" />
       <workItem from="1609704301455" duration="12254000" />
-      <workItem from="1609942130469" duration="2030000" />
+      <workItem from="1609942130469" duration="3728000" />
     </task>
     <task id="LOCAL-00001" summary="Övningsuppgifter tillagda">
       <created>1599575662300</created>
@@ -509,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609676703584</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleanup of StreamDemo">
+      <created>1609944240977</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609944240977</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -545,13 +535,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52391000" />
+    <option name="totallyTimeSpent" value="54089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1111" height="591" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20322888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20322888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -560,7 +550,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12826087" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3652174" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -625,30 +615,10 @@
     <MESSAGE value="Text i ÖvnUppg4 uppdaterad (igen)" />
     <MESSAGE value="Bytte namn på vissa filer" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="cleanup of StreamDemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup of StreamDemo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/LessThanFourTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/PartitioningTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/SumElementsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/UpperCaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -919,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-652">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1b_map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -958,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapLambdaDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -979,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/StreamDemo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="78" selection-start-line="78" selection-end-line="87" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -997,10 +946,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/StreamDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="78" selection-start-line="78" selection-end-line="87" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapLambdaDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/totaleclipse.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+        <state relative-caret-position="357">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapPartitioningDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapGroupByDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
         </state>
       </provider>
     </entry>
