@@ -20,10 +20,10 @@ public class ReduceDemo {
 
         //summering
         System.out.println(intList.stream()
-                  .reduce(0, (total, number) -> total + number));
+                  .reduce(0, (acc, number) -> acc + number));
 
         //konkaternering med aaaa först
-        System.out.println(stuff.stream().reduce("aaaa", (s1, s2) -> s1+=s2));
+        System.out.println(stuff.stream().reduce("aaaa ", (acc, s2) -> acc+=s2+" "));
 
         //konkaternering av alla ord med "am" i sig
         System.out.println(stuff.stream()

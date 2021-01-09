@@ -2,7 +2,7 @@ package ÖvnUppg1_BasicStreams;
 
 import java.util.List;
 
-public class ÖvnUppg1e_primitive {
+public class ÖvnUppg1e_numbers {
 
     public long getAmountOfBooks(List<Book> list){
         return list.stream().filter(b -> b.getOwner().equalsIgnoreCase("Sigrun"))
@@ -18,13 +18,13 @@ public class ÖvnUppg1e_primitive {
     }
 
     public boolean hasTimFerriss(List<Book> list){
-        return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("TimFerriss"));
+        return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("J.R.R. Tolkien"));
 
     }
 
 
 
-    public ÖvnUppg1e_primitive(){
+    public ÖvnUppg1e_numbers(){
 
         List<Book> list = BookUtil.getBookList();
         System.out.println(getAmountOfBooks(list));
@@ -34,6 +34,6 @@ public class ÖvnUppg1e_primitive {
     }
 
     public static void main(String[] args){
-        ÖvnUppg1e_primitive öu = new ÖvnUppg1e_primitive();
+        ÖvnUppg1e_numbers öu = new ÖvnUppg1e_numbers();
     }
 }

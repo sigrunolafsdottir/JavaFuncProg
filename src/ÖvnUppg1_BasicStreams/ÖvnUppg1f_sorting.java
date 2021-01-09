@@ -1,6 +1,7 @@
 package ÖvnUppg1_BasicStreams;
 
 import java.text.Collator;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -21,6 +22,19 @@ public class ÖvnUppg1f_sorting {
 
     }
 
+    public void getTitlesInOrder2(List<Book> list){
+
+        Collator coll = Collator.getInstance(new Locale("sv", "SE"));
+
+        List<Book> sorted = list.stream()
+                .sorted(Comparator.comparing(b -> b.getAuthor().split(" ")[1], coll))
+                .collect(Collectors.toList());
+
+        sorted.forEach(b -> System.out.println(b.getAuthor()+" "+b.getTitle()));
+
+
+    }
+
 
 
 
@@ -30,6 +44,8 @@ public class ÖvnUppg1f_sorting {
         getBooksInRatingOrder(list);
         System.out.println();
         getTitlesInOrder(list);
+        System.out.println();
+        getTitlesInOrder2(list);
     }
 
     public static void main(String[] args){

@@ -25,8 +25,14 @@ public class BookUtil {
         Book b7 = new Book("4 hour Work Week", "Tim Ferriss",
                 "vit", "fakta", "Mats", true, 5);
 
+        Book b8 = new Book("Åååååå", "Åke Åkesson",
+                "vit", "fakta", "Mats", true, 5);
 
-        return Arrays.asList(b1, b2, b3, b4, b5, b6, b7);
+        Book b9 = new Book("Äääää", "Ärling Ärnsstsson",
+                "vit", "fakta", "Mats", true, 5);
+
+
+        return Arrays.asList(b1, b2, b3, b4, b5, b6, b7, b8, b9);
     }
 
     public static List<List<Book>> getComplexBookList(){

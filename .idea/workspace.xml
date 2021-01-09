@@ -42,10 +42,16 @@
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaParameterDemo/ListenerDemo$1.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/LambdaParameterDemo/ListenerDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/META-INF/JavaFuncProg.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/FilterDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/FlatmapDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/JoiningDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/MapDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/MapGroupByDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/MapLambdaDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/MapPartitioningDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/PrimitiveDemo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/ReduceDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/SortingDemo2.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/StreamDemo2.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StreamDemo/totaleclipse.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/StringOperatorDemo/ConsumerDemo.class" afterDir="false" />
@@ -60,7 +66,6 @@
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1b_map.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1c_flatmap.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1d_reduce.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1e_primitive.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1g_joining.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaFuncProg/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.class" afterDir="false" />
@@ -95,8 +100,16 @@
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/LambdaKataFacit/UpperCaseTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/JavaFuncProg/META-INF/JavaFuncProg.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_primitive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_numbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,27 +123,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/ÖvnUppg5_URLWordCountB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+            <state relative-caret-position="228">
+              <caret line="59" column="42" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/OneLambda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+            <state relative-caret-position="51">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StreamDemo/totaleclipse.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -156,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/LambdaKataFacit/KidsNamesTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/LessThanFourTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/PartitioningTest.java" />
         <option value="$PROJECT_DIR$/test/LambdaKataFacit/SumElementsTest.java" />
@@ -167,12 +186,8 @@
         <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1c_flatmap.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/Book.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1d_reduce.java" />
-        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_primitive.java" />
-        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1g_joining.java" />
         <option value="$PROJECT_DIR$/src/LambdaKataFacit/Partitioning.java" />
-        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java" />
-        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg2c_SingleDigitOperation/SingleDigitOperation.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg2c_SingleDigitOperation/SingleDigitOperationMain.java" />
         <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1a_filter.java" />
@@ -196,24 +211,29 @@
         <option value="$PROJECT_DIR$/src/ÖvnUppg2_FunctionalInterfaceFacit/MathOperationMain.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/FileDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/StreamDemo.java" />
-        <option value="$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java" />
-        <option value="$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/FilterDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/MapLambdaDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/SummaryStatisticsDemo.java" />
-        <option value="$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java" />
-        <option value="$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java" />
-        <option value="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/MapGroupByDemo.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/MapPartitioningDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java" />
+        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_primitive.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java" />
+        <option value="$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java" />
+        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java" />
+        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java" />
         <option value="$PROJECT_DIR$/src/StreamDemo/MapDemo.java" />
+        <option value="$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java" />
+        <option value="$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/OneLambda.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="147" />
     <option name="y" value="35" />
-    <option name="width" value="1635" />
+    <option name="width" value="1637" />
     <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -238,59 +258,6 @@
               <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LambdaDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="StreamDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="StringOperatorDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ÖvnUppg1_BasicStreams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ÖvnUppg2_FunctionalInterface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ÖvnUppg2_FunctionalInterfaceFacit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ÖvnUppg2c_SingleDigitOperation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFuncProg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFuncProg" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Inlämningsupgift" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,33 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MapDemo">
-    <configuration name="JoiningDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.JoiningDemo" />
-      <module name="JavaFuncProg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.MapDemo" />
-      <module name="JavaFuncProg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.OneLambda">
     <configuration name="MapGroupByDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StreamDemo.MapGroupByDemo" />
       <module name="JavaFuncProg" />
@@ -392,12 +333,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimitiveDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamDemo.PrimitiveDemo" />
+    <configuration name="OneLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ÖvnUppg5_URLWordCount.OneLambda" />
       <module name="JavaFuncProg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StreamDemo.*" />
+          <option name="PATTERN" value="ÖvnUppg5_URLWordCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -405,13 +346,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ÖvnUppg1h_maps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ÖvnUppg1_BasicStreams.ÖvnUppg1h_maps" />
+      <module name="JavaFuncProg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ÖvnUppg1_BasicStreams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LessThanFourTest.transformShouldFilterCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaFuncProg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LambdaKata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LambdaKata" />
+      <option name="MAIN_CLASS_NAME" value="LambdaKata.LessThanFourTest" />
+      <option name="METHOD_NAME" value="transformShouldFilterCollection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapDemo" />
-        <item itemvalue="Application.MapPartitioningDemo" />
+        <item itemvalue="Application.OneLambda" />
+        <item itemvalue="JUnit.LessThanFourTest.transformShouldFilterCollection" />
+        <item itemvalue="Application.ÖvnUppg1h_maps" />
         <item itemvalue="Application.MapGroupByDemo" />
-        <item itemvalue="Application.JoiningDemo" />
-        <item itemvalue="Application.PrimitiveDemo" />
+        <item itemvalue="Application.MapPartitioningDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +411,7 @@
       <workItem from="1607605970468" duration="1370000" />
       <workItem from="1609674915479" duration="1807000" />
       <workItem from="1609704301455" duration="12254000" />
-      <workItem from="1609942130469" duration="3728000" />
+      <workItem from="1609942130469" duration="19148000" />
     </task>
     <task id="LOCAL-00001" summary="Övningsuppgifter tillagda">
       <created>1599575662300</created>
@@ -499,13 +469,17 @@
       <option name="project" value="LOCAL" />
       <updated>1609944240977</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cleanup of MapDemo">
+      <created>1609945929445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609945929445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ÖvnUppg4_DatabasFacitTest_isThisAnAnswerOption - 2020.11.19 at 11h 03m 33s.xml">
-      <configuration name="ÖvnUppg4_DatabasFacitTest.isThisAnAnswerOption" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ÖvnUppg4_DatabasFacitTest - 2020.11.19 at 11h 04m 46s.xml">
       <configuration name="ÖvnUppg4_DatabasFacitTest" configurationId="JUnit" />
     </history-entry>
@@ -533,15 +507,17 @@
     <history-entry file="ÖvnUppg4_DatabasTest - 2020.11.29 at 17h 12m 39s.xml">
       <configuration name="ÖvnUppg4_DatabasTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LessThanFourTest_transformShouldFilterCollection - 2021.01.07 at 14h 43m 20s.xml">
+      <configuration name="LessThanFourTest.transformShouldFilterCollection" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54089000" />
+    <option name="totallyTimeSpent" value="69509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1111" height="591" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20322888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2668566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -550,7 +526,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3652174" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23913044" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,92 +592,10 @@
     <MESSAGE value="Bytte namn på vissa filer" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="cleanup of StreamDemo" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup of StreamDemo" />
+    <MESSAGE value="cleanup of MapDemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup of MapDemo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/UpperCaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_Generics/ÖvnUppg1b_Generics.java" />
-    <entry file="file://$PROJECT_DIR$/test/LambdaKataFacit/GetStatsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="93" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_primitive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1g_joining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LambdaKataFacit/Partitioning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1c_flatmap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1d_reduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LambdaKata/FlattenCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/LambdaKata/FlattenCollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-221">
@@ -862,23 +756,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/FileDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1a_filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -889,31 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1b_map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/FilterDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="639">
@@ -921,28 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/SummaryStatisticsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,34 +794,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/totaleclipse.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1b_map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+        <state relative-caret-position="119">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapPartitioningDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/ReduceDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="162">
+          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1d_reduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/PrimitiveDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+          <folding>
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/SortingDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1g_joining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1f_sorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/totaleclipse.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/JoiningDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="54" column="52" lean-forward="true" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/BookUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/FlatmapDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1c_flatmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1e_numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg1_BasicStreams/ÖvnUppg1h_maps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapGroupByDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapPartitioningDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LambdaKata/LessThanFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/LambdaKata/LessThanFourTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/ÖvnUppg5_URLWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/ÖvnUppg5_URLWordCountB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StreamDemo/MapDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+        <state relative-caret-position="228">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ÖvnUppg5_URLWordCount/OneLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

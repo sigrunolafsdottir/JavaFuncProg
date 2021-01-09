@@ -32,7 +32,7 @@ public class SortingDemo2 {
         
         intStream = IntStream.of(12, 23, 34, 13, 1);
        
-        //Distinct
+/*        //Distinct
         System.out.println(stringStream.distinct()
                 .collect(Collectors.toList()));
         
@@ -46,21 +46,30 @@ public class SortingDemo2 {
         System.out.println(stuff.stream().sorted()
                 .collect(Collectors.toList()));
 
+
+
         //sorterar baklänges
         System.out.println(stuff.stream()
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList()));
-        
+
+
+ */
+
         //om vi vill ha svensk sortering:
         Collator svenskCollator = Collator
                 .getInstance(new Locale("sv", "SE"));
         System.out.println(stuff.stream().sorted(svenskCollator)
                 .collect(Collectors.toList()));
 
+
         //Sorterar på svenskt sätt baklänges
         System.out.println(stuff.stream()
                 .sorted(svenskCollator.reversed())
                 .collect(Collectors.toList()));
+
+
+
     }
 
     public static void main(String[] args) throws FileNotFoundException{

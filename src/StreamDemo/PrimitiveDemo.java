@@ -15,16 +15,16 @@ public class PrimitiveDemo {
     public PrimitiveDemo() {
         
         List<Integer> intList = asList(1,2,3,4,5,6,7,8,9);
-
+/*
         System.out.println(intList.stream().mapToInt(Integer::intValue).sum());
         System.out.println(intList.stream().mapToInt(i -> i.intValue()).sum());
         System.out.println(intList.stream().mapToInt(e -> e).sum());
         System.out.println(intList.stream().mapToInt(e -> e).max().getAsInt());
-        
+
         List<Double> doubleList = asList(4.9, 5.9);
         System.out.println(doubleList.stream().mapToDouble(Double::intValue).sum());
         System.out.println(doubleList.stream().mapToDouble(e -> e).sum());
-/*
+*/
         numbers = Arrays.asList(15, 65, 23, 567, 1, 345, 33, 78, 976, 1005);
 
         //SummaryStatistics
@@ -47,7 +47,7 @@ public class PrimitiveDemo {
         //Ger inte en OptionalInt
         System.out.println(numbers.stream().
                mapToInt(Integer::valueOf).sum());
-        */
+
     }
     
     
