@@ -1,4 +1,4 @@
-package Inlämningsupgift;
+package Inlämningsupgift1;
 
 import java.util.Arrays;
 import java.util.List;

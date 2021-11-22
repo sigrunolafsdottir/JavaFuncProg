@@ -1,4 +1,4 @@
-package Inlämningsupgift;
+package Inlämningsupgift1;
 
 
 public enum Category {

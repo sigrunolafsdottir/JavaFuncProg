@@ -1,11 +1,10 @@
-package Inlämningsupgift;
+package Inlämningsupgift1;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.List;
 import java.util.Map;
-
 
 
 public class RewriteMeTest {
@@ -118,4 +117,6 @@ public class RewriteMeTest {
         assertEquals(x.getLongestLettercountAnwerInAGivenCategory(Category.HISTORY), "Gustav Adolf");
         assertNotEquals(x.getLongestLettercountAnwerInAGivenCategory(Category.HISTORY), "Birger Jarl");
     }
+
+
 }
