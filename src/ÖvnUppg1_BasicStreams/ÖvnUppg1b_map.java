@@ -8,12 +8,12 @@ public class ÖvnUppg1b_map {
 
     public List<String> getAllTitles(List<Book> list){
         return list.stream().map(b -> b.getTitle())
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public List<String> getAllTitles2(List<Book> list){
         return list.stream().map(Book::getTitle)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public Set<String> getAllUniqueAuthors(List<Book> list){
@@ -23,12 +23,12 @@ public class ÖvnUppg1b_map {
 
     public List<String> getAllUniqueAuthors2(List<Book> list){
         return list.stream().map(s -> s.getAuthor()).distinct()
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public List<String> myBooksOnly(String owner, List<Book> list){
         return list.stream().filter(s -> s.getOwner().equalsIgnoreCase(owner))
-                .map(b -> b.getTitle()).collect(Collectors.toList());
+                .map(b -> b.getTitle()).toList();
     }
 
     public ÖvnUppg1b_map(){

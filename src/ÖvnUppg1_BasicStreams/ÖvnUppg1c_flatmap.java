@@ -8,7 +8,7 @@ public class ÖvnUppg1c_flatmap {
 
     public List<String> getAllTitles(List<List<Book>> list){
         return list.stream().flatMap(value -> value.stream())
-                .map(Book::getTitle).collect(Collectors.toList());
+                .map(Book::getTitle).toList();
     }
 
 

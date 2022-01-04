@@ -19,14 +19,19 @@ public class ListenerDemo {
             System.out.println("Click Detected by Anon Class");
           }
      });
-     
-     //lambda class used to define ActionListener
-     testButton.addActionListener(ae -> 
+
+     ActionListener l = e -> System.out.println("hej");
+
+       testButton.addActionListener(l);
+
+
+       //lambda class used to define ActionListener
+     testButton.addActionListener(aevvvvv ->
              System.out.println("Click Detected by Lambda "
                      + "Listner"));
      
      //Lambda used again, but with type declaration for in-parameter
-     testButton.addActionListener((ActionEvent ae) -> 
+     testButton.addActionListener((ActionEvent ae) ->
              System.out.println("Click Detected by Lambda "
                      + "Listner 2"));
      

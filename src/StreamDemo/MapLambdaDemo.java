@@ -22,17 +22,18 @@ public class MapLambdaDemo {
 
 
          System.out.println(stuff.stream()
-                .map(s -> s.toUpperCase())
-                .collect(Collectors.toList()));
+                .map(s -> s.toUpperCase()).toList());
 
 
 
          List<String> l22 = stuff.stream().map(s -> s.toUpperCase())
-                .collect(Collectors.toList());
-       // System.out.println();
-      // stuff.stream().map(s -> s.toUpperCase())
-       //         .forEach(s -> System.out.println(s));
+                 .toList();
+
+        System.out.println(stuff);
+        System.out.println(l22);
+
         l22.stream().map(s -> s.replace('I', 'o'))
+                .map(s -> s.replace('i', 'O'))
                 .forEach(s -> System.out.println(s));
 
 

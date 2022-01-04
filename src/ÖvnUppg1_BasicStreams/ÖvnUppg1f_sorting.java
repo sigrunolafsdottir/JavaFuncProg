@@ -8,11 +8,19 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1f_sorting {
 
+    public void getBooksInRatingOrder2(List<Book> list){
+        list.stream().map(Book::getRating)
+                .sorted().forEach(b -> System.out.println(b));
+
+    }
+
+
     public void getBooksInRatingOrder(List<Book> list){
         list.stream().sorted((p1, p2) -> ((Integer)p1.getRating()).compareTo(p2.getRating()))
                 .forEach(b -> System.out.println(b.getTitle()));
 
     }
+
 
     public void getTitlesInOrder(List<Book> list){
 
@@ -41,6 +49,8 @@ public class ÖvnUppg1f_sorting {
     public ÖvnUppg1f_sorting(){
 
         List<Book> list = BookUtil.getBookList();
+        getBooksInRatingOrder2(list);
+        System.out.println();
         getBooksInRatingOrder(list);
         System.out.println();
         getTitlesInOrder(list);

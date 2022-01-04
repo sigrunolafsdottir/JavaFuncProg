@@ -18,8 +18,7 @@ public class ÖvnUppg1e_numbers {
     }
 
     public boolean hasTimFerriss(List<Book> list){
-        return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("J.R.R. Tolkien"));
-
+        return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("Tim Ferriss"));
     }
 
 

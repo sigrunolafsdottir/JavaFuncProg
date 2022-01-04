@@ -18,8 +18,9 @@ public class EmptyParameterDemo {
      // Run em!
      Thread t1 = new Thread(r1);
      Thread t2 = new Thread(() -> System.out.println("Hello world two lambda!"));
+     Thread t3 = new Thread(r2);
      t1.start();
      t2.start();
-     
+     t3.start();
    }
  }

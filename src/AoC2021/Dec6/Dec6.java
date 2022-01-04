@@ -12,8 +12,9 @@ public class Dec6 {
 
 
     public long uppg(String path, int iter)  throws IOException {
+
         String input = (String) Files.lines(Path.of(path)).toArray()[0];  //allt som en rad
-        var fishes = Arrays.stream(input.split(",")).map(Integer::parseInt).toList();
+        List<Integer> fishes = Arrays.stream(input.split(",")).map(Integer::parseInt).toList();
 
         List<Long> ls = Arrays.asList(0L,0L,0L,0L,0L,0L,0L,0L,0L);  //här håller vi räkningen
         fishes.forEach(f -> ls.set(f, ls.get(f)+1L));   // placerar in fiskarna
@@ -24,6 +25,7 @@ public class Dec6 {
         }
 
         return ls.stream().mapToLong(Long::longValue).sum();    //summera
+
     }
 
 

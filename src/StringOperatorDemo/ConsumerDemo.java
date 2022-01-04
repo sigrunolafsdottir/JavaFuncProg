@@ -21,6 +21,7 @@ public class ConsumerDemo {
         System.out.println();
 
         l.forEach(doubleText);
+        System.out.println();
         l.forEach(t -> System.out.println(t+" "+t));
         System.out.println();
 

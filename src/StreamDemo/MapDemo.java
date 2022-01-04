@@ -24,7 +24,7 @@ public class MapDemo {
         //Skapar en map där namnen i names är nycklar och deras längder är värden
         Map<String, Integer> nameLengthTracker = names.stream()
                 .collect(Collectors.toMap(p -> p, n -> n.length()));
- /*
+
         nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
 
         System.out.println(nameLengthTracker.entrySet());
@@ -39,17 +39,16 @@ public class MapDemo {
 
         System.out.println(nameLengthTracker.containsValue(4));
         System.out.println(nameLengthTracker.containsKey(100));
-*/
+
 
         nameLengthTracker.put("Frideborg", 9);
         
-        //För att skriva ut värdena i mappen
-        //nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
 
         System.out.println();
         //vi gör replaceAll på värdena tar minus 1
         nameLengthTracker.replaceAll((k,v) -> k.substring(1).length());
         nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
+        System.out.println();
 
         //Med compute ändrar vi ett av värdena till valfritt värde
         nameLengthTracker.compute("Anna", (k, v) -> 100);

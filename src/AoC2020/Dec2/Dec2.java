@@ -21,7 +21,7 @@ public class Dec2 {
 
     public int checkAllPassports(PassportChecker checker, String path) throws IOException {
         List<String> input = Files.lines(Path.of(path))
-                .map(l -> l.trim()).collect(Collectors.toList());
+                .map(l -> l.trim()).toList();
 
         int counter = 0;
         for (String s : input) {

@@ -8,17 +8,17 @@ public class ÖvnUppg1a_filter {
 
     public List<Book> getAllBooksByAnAuthor(String author, List<Book> list){
         return list.stream().filter(s -> s.getAuthor().equalsIgnoreCase(author))
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public List<Book> getAllBooksByAColor(String color, List<Book> list){
         return list.stream().filter(s -> s.getColor().equalsIgnoreCase(color))
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public int getNumberOfBooksBelongingToAnOwner1(String owner, List<Book> list){
         return list.stream().filter(s -> s.getOwner().equalsIgnoreCase(owner))
-                .collect(Collectors.toList()).size();
+                .toList().size();
     }
 
     public long getNumberOfBooksBelongingToAnOwner2(String owner, List<Book> list){

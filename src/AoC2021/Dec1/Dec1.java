@@ -4,15 +4,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Dec1 {
 
     public int uppgA(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
-                .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .map(l -> Integer.parseInt(l.trim())).toList();
 
         int counter = 0;
         for (int i = 0; i < input.size()-1; i++){
@@ -25,16 +23,14 @@ public class Dec1 {
 
     public long uppgA2(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
-                .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .map(l -> Integer.parseInt(l.trim())).toList();
 
-        return IntStream.range(0, input.size()-1).filter(i ->input.get(i)< input.get(i+1)).count();
+        return IntStream.range(0, input.size()-1).filter(i ->input.get(i) < input.get(i+1)).count();
     }
 
     public long uppgB(String path, int winSize)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
-                .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .map(l -> Integer.parseInt(l.trim())).toList();
 
         return IntStream.range(0, input.size()-winSize)
                 .filter(i ->input.get(i) < input.get(i+winSize)).count();

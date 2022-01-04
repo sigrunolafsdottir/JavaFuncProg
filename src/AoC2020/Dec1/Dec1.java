@@ -5,15 +5,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class Dec1 {
 
     public int uppgA(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
                 .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .toList();
 
         for (int i = 0; i < input.size()-1; i++){
             for (int j = i+1; j < input.size()-1; j++){
@@ -29,7 +27,7 @@ public class Dec1 {
     public long uppgA2(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
                 .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .toList();
 
         return input.stream().filter(
                 i -> input.stream().anyMatch(j -> i + j == 2020)).reduce(1, (acc, nr) -> acc*nr);
@@ -41,7 +39,7 @@ public class Dec1 {
     public int uppgB(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
                 .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .toList();
 
         for (int i = 0; i < input.size()-1; i++){
             for (int j = i+1; j < input.size()-1; j++){
@@ -58,11 +56,12 @@ public class Dec1 {
     public long uppgB2(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
                 .map(l -> Integer.parseInt(l.trim()))
-                .collect(Collectors.toList());
+                .toList();
 
         return input.stream().filter(
                 i -> input.stream().anyMatch(
-                        j -> input.stream().anyMatch(k -> i + j + k == 2020))).reduce(1, (acc, nr) -> acc*nr);
+                        j -> input.stream().anyMatch(k -> i + j + k == 2020)))
+                        .reduce(1, (acc, nr) -> acc*nr);
 
     }
 

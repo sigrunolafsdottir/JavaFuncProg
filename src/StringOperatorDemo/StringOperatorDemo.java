@@ -13,7 +13,7 @@ public class StringOperatorDemo {
                 s.charAt(s.length() -1));
 
         StringOperator f3 = s -> s.toUpperCase();
-  /*
+/*
         print(f1, "En jättelång sträng");
         print(f2, "En jättelång sträng");
         print(f3, "hejsan hoppsan");
@@ -22,15 +22,18 @@ public class StringOperatorDemo {
         print(s -> s.replace(s.charAt(0), 
                 s.charAt(s.length() -1)), 
                 "En jättelång sträng");
+        System.out.println();
 
+        String test = f1.apply("Hej");
+        System.out.println(test);
 */
 
         print(f1.andThen(f2), "En jättelångsträng");
         print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
         print(f2.andThen(f1), "En jättelångsträng");
 
-        // ättelångsträng
-//gjättelångsträng
+        //gättelångsträng
+//ättelångsträng
 // jättelångsträng
 
     }

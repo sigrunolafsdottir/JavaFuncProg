@@ -23,12 +23,12 @@ public class ReduceDemo {
                   .reduce(0, (acc, number) -> acc + number));
 
         //konkaternering med aaaa först
-        System.out.println(stuff.stream().reduce("aaaa ", (acc, s2) -> acc+=s2+" "));
+        System.out.println(stuff.stream().reduce("", (acc, s) -> acc+=s));
 
         //konkaternering av alla ord med "am" i sig
         System.out.println(stuff.stream()
                   .filter(s -> s.contains("am"))
-                  .reduce("", (s1, s2) -> s1+=s2));
+                  .reduce("", (sacc, s2) -> sacc+=s2));
 
     }
     

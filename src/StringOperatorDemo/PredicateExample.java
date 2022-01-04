@@ -6,7 +6,7 @@ public class PredicateExample {
     public static void main(String[] args) 
     { 
         // Creating predicate 
-        Predicate<Integer> lesserthan18 = i -> (i < 18);  
+        Predicate<Integer> lesserthan18 = i -> (i < 18);
         Predicate<Integer> morethan18 = i -> (i > 18);  
         
         Predicate<String> morethan3Letters = s -> s.length() > 3;
@@ -26,7 +26,7 @@ public class PredicateExample {
         System.out.println();
         System.out.println(missionImpossible.test(15));
 
-        System.out.println(almostAlwaysTrue.test(18));
+        System.out.println(almostAlwaysTrue.test(17));
 
 
     } 

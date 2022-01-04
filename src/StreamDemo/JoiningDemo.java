@@ -46,9 +46,6 @@ public class JoiningDemo {
                 .collect(Collectors.joining(", ")));
 
 
-        
-//        För att skriva ut alla ord i filen i bokstavsordning
-        //splitAsStream splittar en ström, med inputen som delimiter (här tomma tecken)
         Pattern p = Pattern.compile("\\s+");
         BufferedReader in2 = new BufferedReader(
                 new FileReader("src\\StreamDemo\\totaleclipse.txt"));

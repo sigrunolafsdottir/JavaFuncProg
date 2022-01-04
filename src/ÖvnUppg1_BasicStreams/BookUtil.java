@@ -26,10 +26,10 @@ public class BookUtil {
                 "vit", "fakta", "Mats", true, 5);
 
         Book b8 = new Book("Åååååå", "Åke Åkesson",
-                "vit", "fakta", "Mats", true, 5);
+                "vit", "fakta", "Mats", true, 1);
 
         Book b9 = new Book("Äääää", "Ärling Ärnsstsson",
-                "vit", "fakta", "Mats", true, 5);
+                "vit", "fakta", "Mats", true, 2);
 
 
         return Arrays.asList(b1, b2, b3, b4, b5, b6, b7, b8, b9);

@@ -22,19 +22,22 @@ public class FlatmapDemo {
         
         List<List<List<String>>> deepList2 = asList(asList(asList("bike", "car"), 
                 asList("spoon", "fork", "knife")));
-/*
+
         System.out.println(deepList);
 
         System.out.println(deepList.stream().
-                flatMap(l -> l.stream()).collect(Collectors.toList()));
-                */
+                flatMap(l -> l.stream()).toList());
+
 
 
         System.out.println(deepList2);
 
         System.out.println(deepList2.stream()
+                .flatMap(l -> l.stream()).toList());
+
+        System.out.println(deepList2.stream()
                 .flatMap(l -> l.stream())
-                .flatMap(l3 -> l3.stream()).collect(Collectors.toList()));
+          .flatMap(l3 -> l3.stream()).toList());
 
 
     }
