@@ -23,17 +23,17 @@ public class ÖvnUppg5_URLWordCountB {
             BufferedReader words = new BufferedReader(
                     new InputStreamReader(url.openStream()));
             
-            Map <Integer, List<String>> letterCountWordListMap 
-                    = words.lines()
+            Map <Integer, List<String>> letterCountWordListMap    //  3, [aaa, bbb]
+                    = words.lines()                               //   4, [ffff]
                     .collect(Collectors.groupingBy(n -> n.length()));
             
             Collection<List<String>> wordsOnly = letterCountWordListMap.
-                    values();
+                    values();  //  [[aaa, bbb], [ffff]]
             
             Map <Integer, Integer> letterCountMap = wordsOnly.stream()
                     .collect(Collectors
-                            .toMap(n -> n.get(0).length(), n -> n.size()));
-            
+                            .toMap(n -> n.get(0).length(), n -> n.size()));   // 3, 2
+                                                                              // 4, 1
             letterCountMap.forEach((k,v) -> System.out.println(k + " " +v));
            
             

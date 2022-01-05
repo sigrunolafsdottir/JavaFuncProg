@@ -18,17 +18,17 @@ public class ÖvnUppg5_URLWordCount {
             
             BufferedReader words = new BufferedReader(
                     new InputStreamReader(url.openStream()));
-            
+          /*
             Map <Integer, List<String>> letterCountWordListMap = words.lines()
                     .collect(Collectors.groupingBy(n -> n.length()));
             
             letterCountWordListMap.forEach((k,v) -> System.out.println(k + " " +v));
             System.out.println();
-
+*/
 
         //   i ett svep
-         //   words.lines().collect(Collectors.groupingBy(n -> n.length()))
-         //           .forEach((k,v) -> System.out.println(k + " " +v));
+            words.lines().collect(Collectors.groupingBy(n -> n.length()))
+                    .forEach((k,v) -> System.out.println(k + " " +v));
             
         }
         catch (MalformedURLException e){
