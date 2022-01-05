@@ -33,15 +33,18 @@ public class MapDemo {
 
 
         System.out.println(nameLengthTracker.get("Anna"));
+        System.out.println(nameLengthTracker.get("Annfdsfsfsa"));
+        System.out.println(nameLengthTracker.get(4));
 
         System.out.println(nameLengthTracker.containsKey("Bertil"));
         System.out.println(nameLengthTracker.containsKey("Rulle"));
 
         System.out.println(nameLengthTracker.containsValue(4));
-        System.out.println(nameLengthTracker.containsKey(100));
+        System.out.println(nameLengthTracker.containsValue(100));
 
-
+        System.out.println();
         nameLengthTracker.put("Frideborg", 9);
+        System.out.println(nameLengthTracker.entrySet());
         
 
         System.out.println();

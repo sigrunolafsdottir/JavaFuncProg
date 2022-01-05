@@ -49,6 +49,7 @@ public class Dec7 {
         System.out.println(checkCrabs(solA, "src/AoC2021/Dec7/input.txt"));
         System.out.println(checkCrabs(solB, "src/AoC2021/Dec7/input_mini.txt"));
         System.out.println(checkCrabs(solB, "src/AoC2021/Dec7/input.txt"));
+
         System.out.println(checkCrabs2(solA, "src/AoC2021/Dec7/input_mini.txt"));
         System.out.println(checkCrabs2(solA, "src/AoC2021/Dec7/input.txt"));
         System.out.println(checkCrabs2(solB, "src/AoC2021/Dec7/input_mini.txt"));
