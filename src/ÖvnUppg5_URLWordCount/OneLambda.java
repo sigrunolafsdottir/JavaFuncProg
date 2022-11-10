@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 
-//Oscar Forss lösning
 
 public class OneLambda {
 
