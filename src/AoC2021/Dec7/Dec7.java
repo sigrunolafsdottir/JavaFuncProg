@@ -32,13 +32,15 @@ public class Dec7 {
         return acc.stream().map(l -> l.stream().mapToInt(e->e).sum()).mapToInt(e->e).min().orElse(0);
     }
 
+    //samma som ovan men for-loopen "funktionaliserad"
     public int checkCrabs2(CrabChecker cc, String path) throws IOException {
         String input = (String) Files.lines(Path.of(path)).toArray()[0];  //allt som en rad
         List<Integer> pos = Arrays.stream(input.split(",")).map(Integer::parseInt).toList();
         int max = pos.stream().mapToInt(e->e).max().getAsInt();
         int min = pos.stream().mapToInt(e->e).min().getAsInt();
 
-        return IntStream.range(min, max).map(i -> pos.stream().map(j-> cc.check(i,j)).mapToInt(e->e).sum()).min().orElse(0);
+        return IntStream.range(min, max).map(i -> pos.stream().map(j-> cc.check(i,j))
+                .mapToInt(e->e).sum()).min().orElse(0);
 
     }
 

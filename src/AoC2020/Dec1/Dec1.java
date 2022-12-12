@@ -68,16 +68,16 @@ public class Dec1 {
     public static void main(String[] args) throws IOException{
 
         AoC2020.Dec1.Dec1 d = new AoC2020.Dec1.Dec1();
-        System.out.println("Uppg A, test: " + d.uppgA("src/AoC2020/Dec1/input_mini.txt"));
+        System.out.println("Uppg A, FilmKod.IntroFP.test: " + d.uppgA("src/AoC2020/Dec1/input_mini.txt"));
         System.out.println("Uppg A: " + d.uppgA("src/AoC2020/Dec1/input.txt"));
         System.out.println();
-        System.out.println("Uppg A2, test: " + d.uppgA2("src/AoC2020/Dec1/input_mini.txt"));
+        System.out.println("Uppg A2, FilmKod.IntroFP.test: " + d.uppgA2("src/AoC2020/Dec1/input_mini.txt"));
         System.out.println("Uppg A2: " + d.uppgA2("src/AoC2020/Dec1/input.txt"));
         System.out.println();
-        System.out.println("Uppg B, test: " + d.uppgB("src/AoC2020/Dec1/input_mini.txt"));
+        System.out.println("Uppg B, FilmKod.IntroFP.test: " + d.uppgB("src/AoC2020/Dec1/input_mini.txt"));
         System.out.println("Uppg B: " + d.uppgB("src/AoC2020/Dec1/input.txt"));
         System.out.println();
-        System.out.println("Uppg B2, test: " + d.uppgB2("src/AoC2020/Dec1/input_mini.txt"));
+        System.out.println("Uppg B2, FilmKod.IntroFP.test: " + d.uppgB2("src/AoC2020/Dec1/input_mini.txt"));
         System.out.println("Uppg B2: " + d.uppgB2("src/AoC2020/Dec1/input.txt"));
 
     }

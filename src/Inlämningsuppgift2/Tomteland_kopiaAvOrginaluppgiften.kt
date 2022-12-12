@@ -24,7 +24,7 @@ För att bli godkänd på uppgiften måste du använda rekursion.
 
  */
 
-class Tomteland {
+class Tomteland_kopiaAvOrginaluppgiften {
 
     //TODO: skapa en datastruktur för att lagra tomtarna och deras relationer i
 

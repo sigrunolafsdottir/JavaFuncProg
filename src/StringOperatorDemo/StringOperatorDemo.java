@@ -24,8 +24,8 @@ public class StringOperatorDemo {
                 "En jättelång sträng");
         System.out.println();
 
-        String test = f1.apply("Hej");
-        System.out.println(test);
+        String FilmKod.IntroFP.test = f1.apply("Hej");
+        System.out.println(FilmKod.IntroFP.test);
 */
 
         print(f1.andThen(f2), "En jättelångsträng");

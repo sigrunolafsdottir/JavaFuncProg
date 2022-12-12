@@ -10,18 +10,17 @@ import java.util.stream.Collectors;
 public class Dec2 {
 
 
-    public PassportChecker checkA = ((password, letter, startRange, stopRange) -> {
+    public PasswordChecker checkA = ((password, letter, startRange, stopRange) -> {
         long count = password.chars().filter(c -> c == letter).count();
         return count >= startRange && count <= stopRange;
     });
 
-    public PassportChecker checkB = ((password, letter, startRange, stopRange) ->
+    public PasswordChecker checkB = ((password, letter, startRange, stopRange) ->
             (password.charAt(startRange-1)==letter)^(password.charAt(stopRange-1)==letter));
 
 
-    public int checkAllPassports(PassportChecker checker, String path) throws IOException {
-        List<String> input = Files.lines(Path.of(path))
-                .map(l -> l.trim()).toList();
+    public int checkAllPassports(PasswordChecker checker, String path) throws IOException {
+        List<String> input = Files.lines(Path.of(path)).map(l -> l.trim()).toList();
 
         int counter = 0;
         for (String s : input) {
@@ -31,7 +30,6 @@ public class Dec2 {
                 counter++;
         }
         return counter;
-
     }
 
     public Dec2() throws IOException {

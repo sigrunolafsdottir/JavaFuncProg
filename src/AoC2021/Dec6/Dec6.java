@@ -32,10 +32,10 @@ public class Dec6 {
     public static void main(String[] args) throws IOException{
 
         AoC2021.Dec6.Dec6 d = new AoC2021.Dec6.Dec6();
-        System.out.println("Uppg A, test: " + d.uppg("src/AoC2021/Dec6/input_mini.txt", 80));
+        System.out.println("Uppg A, FilmKod.IntroFP.test: " + d.uppg("src/AoC2021/Dec6/input_mini.txt", 80));
         System.out.println("Uppg A: " + d.uppg("src/AoC2021/Dec6/input.txt", 80));
         System.out.println();
-        System.out.println("Uppg B, test: " + d.uppg("src/AoC2021/Dec6/input_mini.txt", 256));
+        System.out.println("Uppg B, FilmKod.IntroFP.test: " + d.uppg("src/AoC2021/Dec6/input_mini.txt", 256));
         System.out.println("Uppg B: " + d.uppg("src/AoC2021/Dec6/input.txt", 256));
 
     }
