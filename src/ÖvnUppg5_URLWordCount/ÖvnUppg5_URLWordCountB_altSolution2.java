@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 
 
-public class OneLambda {
+public class ÖvnUppg5_URLWordCountB_altSolution2 {
 
     public static void main(String[] args) throws IOException {
 
