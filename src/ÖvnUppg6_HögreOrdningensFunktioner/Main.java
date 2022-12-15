@@ -10,11 +10,11 @@ public class Main {
     final DAO dao = new DAO();
     final List<Kompis> allakompisar = dao.getAllPersons();
 
-    final KompisInterface namnSök = (term, k) -> k.getName().equals(term);
-    final KompisInterface telefonSök = (term, k) -> k.getPhone().equals(term);
+    KompisInterface namnSök = (term, k) -> k.getName().equals(term);
+    KompisInterface telefonSök = (term, k) -> k.getPhone().equals(term);
 
     //vi kan använda javas färdiga, generiska, funktionsgrsänssnitt, funkar också
-    final BiPredicate<String, Kompis> ageSök = (term, k) -> k.getAge() == Integer.parseInt(term);
+    BiPredicate<String, Kompis> ageSök = (term, k) -> k.getAge() == Integer.parseInt(term);
 
     List<Kompis> findFriends (String term, BiPredicate bp){
         return allakompisar.stream().filter(f -> bp.test(term, f)).toList();
