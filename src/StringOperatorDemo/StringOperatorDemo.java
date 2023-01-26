@@ -11,9 +11,13 @@ public class StringOperatorDemo {
         StringOperator f1 = s -> s.substring(2);
         StringOperator f2 = s -> s.replace(s.charAt(0),
                 s.charAt(s.length() -1));
+/*
+        final String finalstring = "finalString";
+
+        print(f1, finalstring);
 
         StringOperator f3 = s -> s.toUpperCase();
-/*
+
         print(f1, "En jättelång sträng");
         print(f2, "En jättelång sträng");
         print(f3, "hejsan hoppsan");
@@ -23,14 +27,20 @@ public class StringOperatorDemo {
                 s.charAt(s.length() -1)), 
                 "En jättelång sträng");
         System.out.println();
-
-        String FilmKod.IntroFP.test = f1.apply("Hej");
-        System.out.println(FilmKod.IntroFP.test);
 */
+
+        /*
+            default StringOperator andThen(StringOperator after){
+        return s -> after.apply(apply(s));
+    }
+         */
+
 
         print(f1.andThen(f2), "En jättelångsträng");
         print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
         print(f2.andThen(f1), "En jättelångsträng");
+
+
 
         //gättelångsträng
 //ättelångsträng

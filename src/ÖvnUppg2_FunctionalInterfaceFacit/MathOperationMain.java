@@ -40,8 +40,23 @@ public class MathOperationMain {
       //MathOperation subtraction = (a, b) -> a - b;
       //(i, j) -> m.operation(i, j) + operation(i, j);
       // (10-5)+(10+5) = 20
+
       MathOperation justTesting = addition.add(subtraction);
-      System.out.println(justTesting.operation(10,5));
+
+      System.out.println(justTesting.operation(3,4));
+      //  (-1) + 7 = 6
+
+      //(i, j) -> operation(m.operation(i,j), operation(i,j));
+      MathOperation test2 = addition.doubleUp(subtraction);
+
+      System.out.println(test2.operation(3,4));
+      // op (-1, 7) = 6
+
+      // default MathOperation andThen(MathOperation after){
+      // return (i, j) -> after.operation(operation(i,j), operation(i,j));
+      MathOperation test3 = addition.andThen(subtraction);
+
+      System.out.println(test3.operation(1,2));
 		
    }
 }

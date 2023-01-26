@@ -1,6 +1,8 @@
 package ÖvnUppg2_FunctionalInterfaceFacit;
 
 
+import StringOperatorDemo.StringOperator;
+
 public interface MathOperation {
       int operation(int a, int b);
       
@@ -11,7 +13,17 @@ public interface MathOperation {
           return (i, j) -> m.operation(i, j) + operation(i, j);
       }
 
-      default String test(Integer i){
+      default MathOperation doubleUp(MathOperation m){
+          return (i, j) -> operation(m.operation(i,j), operation(i,j));
+    }
+
+    default String test(Integer i){
           return "hej";
       }
-   }
+
+
+    default MathOperation andThen(MathOperation after){
+        return (i, j) -> after.operation(operation(i,j), operation(i,j));
+    }
+
+}
