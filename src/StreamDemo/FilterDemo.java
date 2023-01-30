@@ -21,23 +21,26 @@ public class FilterDemo {
 
         intList.stream().filter(i -> i > 5 && i <=8)
                 .forEach(s -> System.out.println(s));
+
         System.out.println();
 
         //                    12345678         678
-        intList.stream().filter(i -> i <= 8).filter(i -> i > 5)
+       intList.stream().filter(i -> i <= 8).filter(i -> i > 5)
                 .forEach(s -> System.out.println(s));
         System.out.println();
 
         intList.forEach(e -> System.out.println(e));
 
-       // intList = intList.stream().filter(i -> i <= 8).filter(i -> i > 5).collect(Collectors.toList());
+        intList = intList.stream().filter(i -> i <= 8).filter(i -> i > 5).toList();
 
-       // intList.forEach(e -> System.out.println(e));
+        intList.forEach(e -> System.out.println(e));
+
+
 
         stuff.stream().filter(s -> s.length() == 4)
                 .forEach(s -> System.out.println(s));
 
-
+/*
 
         List <String> listtest = stuff.stream().filter(s -> s.length() == 4)
                 .collect(Collectors.toList());
@@ -45,7 +48,7 @@ public class FilterDemo {
 
         listtest.forEach(s -> System.out.println(s));
         System.out.println();
-
+*/
         stuff.stream().filter(s -> s.charAt(0) == 'f')
                 .forEach(s -> System.out.println(s));
         System.out.println();

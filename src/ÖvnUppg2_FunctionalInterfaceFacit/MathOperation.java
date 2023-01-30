@@ -9,12 +9,11 @@ public interface MathOperation {
       //uppgift 2b. GÖr inget vettigt
     //MathOperation justTesting = addition.add(subtraction);
       default MathOperation add(MathOperation m){
-
           return (i, j) -> m.operation(i, j) + operation(i, j);
       }
 
       default MathOperation doubleUp(MathOperation m){
-          return (i, j) -> operation(m.operation(i,j), operation(i,j));
+          return (a, b) -> operation(m.operation(a,b), operation(a,b));
     }
 
     default String test(Integer i){

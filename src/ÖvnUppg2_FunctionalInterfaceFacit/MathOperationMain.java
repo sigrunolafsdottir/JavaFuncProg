@@ -38,12 +38,13 @@ public class MathOperationMain {
       //Uppgift 2b
       //MathOperation addition = (a, b) -> a + b;
       //MathOperation subtraction = (a, b) -> a - b;
-      //(i, j) -> m.operation(i, j) + operation(i, j);
+      //return (i, j) -> m.operation(i, j) + operation(i, j);
       // (10-5)+(10+5) = 20
 
+      //TODO skriv fler exempel där ordningen spelar roll
       MathOperation justTesting = addition.add(subtraction);
 
-      System.out.println(justTesting.operation(3,4));
+      System.out.println("justtesting: "+justTesting.operation(3,4));
       //  (-1) + 7 = 6
 
       //(i, j) -> operation(m.operation(i,j), operation(i,j));
@@ -53,10 +54,14 @@ public class MathOperationMain {
       // op (-1, 7) = 6
 
       // default MathOperation andThen(MathOperation after){
-      // return (i, j) -> after.operation(operation(i,j), operation(i,j));
+      // return (i, j) -> after.operation(this.operation(i,j), this.operation(i,j));
       MathOperation test3 = addition.andThen(subtraction);
 
       System.out.println(test3.operation(1,2));
+
+      MathOperation test4 = multiplication.andThen(addition);
+
+      System.out.println(test4.operation(1,2));
 		
    }
 }

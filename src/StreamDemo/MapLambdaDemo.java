@@ -14,8 +14,8 @@ public class MapLambdaDemo {
     
     public MapLambdaDemo() {
         stuff = Arrays.asList("bike", "card", "dime", 
-                "film", "game", "fork", 
-                "knife", "spoon", "lame");
+                "film", "game", "fork", "dime",
+                "knife", "spoon", "lame", "card");
         
         List<Integer> intList = asList(1,2,3,4,5,6,7,8,9);
 
@@ -49,6 +49,8 @@ public class MapLambdaDemo {
         System.out.println(stuff.stream().anyMatch(s -> s.equals("fsdgfdgdfgfdg")));
 
         System.out.println(stuff.stream().count());
+
+        System.out.println(stuff.stream().distinct().toList());
 
     }
     

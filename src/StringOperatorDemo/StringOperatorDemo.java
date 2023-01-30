@@ -8,43 +8,34 @@ public class StringOperatorDemo {
     }
 
     public static void main(String[] args){
-        StringOperator f1 = s -> s.substring(2);
-        StringOperator f2 = s -> s.replace(s.charAt(0),
+        StringOperator chopLetters = s -> s.substring(2);
+
+        StringOperator replaceFirstWithLast = s -> s.replace(s.charAt(0),
                 s.charAt(s.length() -1));
+
+        StringOperator upper = s -> s.toUpperCase();
 /*
         final String finalstring = "finalString";
 
-        print(f1, finalstring);
+        print(chopLetters, finalstring);
 
-        StringOperator f3 = s -> s.toUpperCase();
-
-        print(f1, "En jättelång sträng");
-        print(f2, "En jättelång sträng");
-        print(f3, "hejsan hoppsan");
-
-        print(s -> s.substring(2), "En jättelång sträng");
-        print(s -> s.replace(s.charAt(0), 
-                s.charAt(s.length() -1)), 
-                "En jättelång sträng");
-        System.out.println();
+        print(chopLetters, "En jättelång sträng");
+        print(replaceFirstWithLast, "En jättelång sträng");
+        print(upper, "hejsan hoppsan");
 */
 
         /*
             default StringOperator andThen(StringOperator after){
-        return s -> after.apply(apply(s));
-    }
+        return s -> after.apply(this.apply(s));
          */
 
+        StringOperator so1 = chopLetters.andThen(replaceFirstWithLast);
+        System.out.println(so1.apply("abcde"));
 
-        print(f1.andThen(f2), "En jättelångsträng");
-        print(f1.andThen(f2).andThen(f1), "En jättelångsträng");
-        print(f2.andThen(f1), "En jättelångsträng");
+      //  print(freplaceFirstWithLast.andThen(chopLetters), "En jättelångsträng");
 
+      //  print(chopLetters.andThen(replaceFirstWithLast).andThen(chopLetters), "En jättelångsträng");
 
-
-        //gättelångsträng
-//ättelångsträng
-// jättelångsträng
 
     }
 }
