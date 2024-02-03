@@ -14,6 +14,8 @@ public class TomtelandTest {
 
     Tomteland tl = new Tomteland();
 
+
+
     List<String> uTomten = Arrays.asList("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten", "Glader",
             "Butter", "Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen");
     List<String> uGlader = Arrays.asList("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten");
@@ -24,6 +26,62 @@ public class TomtelandTest {
     List<String> uRäven = Arrays.asList("Gråsuggan", "Myran", "Bladlusen");
     List<String> uMyran = Arrays.asList("Bladlusen");
 
+
+    @Test
+    final void getUnderlingsBladlusenTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Bladlusen", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsTrögerTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Tröger", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsBlygerTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Blyger", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsDammråttanTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Dammråttan", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsGråsugganTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Gråsuggan", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsHarenTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Haren", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsNyckelpiganTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Nyckelpigan", list);
+        assertEquals(underlings.size(), 0);
+    }
+
+    @Test
+    final void getUnderlingsRådjuretTest(){
+        List<String> list = new ArrayList<>();
+        List<String> underlings = tl.getUnderlings("Rådjuret", list);
+        assertEquals(underlings.size(), 0);
+    }
 
     @Test
     final void getUnderlingsMyranTest(){
