@@ -21,6 +21,10 @@ public class ÖvnUppg1e_numbers {
         return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("Tim Ferriss"));
     }
 
+    public boolean hasDHBJSF(List<Book> list){
+        return list.stream().anyMatch(s -> s.getAuthor().equalsIgnoreCase("DHBJSF"));
+    }
+
 
 
     public ÖvnUppg1e_numbers(){
@@ -30,6 +34,7 @@ public class ÖvnUppg1e_numbers {
         System.out.println(getAverageGrade(list));
         System.out.println(getAverageGrade2(list));
         System.out.println(hasTimFerriss(list));
+        System.out.println(hasDHBJSF(list));
     }
 
     public static void main(String[] args){

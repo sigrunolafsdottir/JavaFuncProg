@@ -32,6 +32,9 @@ public class JoiningDemo {
         System.out.println(stuff.stream()
                 .collect(Collectors.joining("-", "%", "*")));
 
+        System.out.println(stuff.stream()
+                .collect(Collectors.joining(", ")));
+
 
         //Vi kan få strömmar från t.ex BufferedReader
         BufferedReader in = new BufferedReader(
@@ -39,12 +42,17 @@ public class JoiningDemo {
         System.out.println(in.lines().count());
 
 
+
+
+
+
+/*
+
         //Joining, skriver ut låttexten med komma emellan
         BufferedReader in3 = new BufferedReader(
                 new FileReader("src\\StreamDemo\\totaleclipse.txt"));
         System.out.println(in3.lines()
                 .collect(Collectors.joining(", ")));
-
 
         Pattern p = Pattern.compile("\\s+");
         BufferedReader in2 = new BufferedReader(
@@ -53,7 +61,7 @@ public class JoiningDemo {
                 .map(s -> s.toLowerCase())
                 .distinct().sorted()
                 .forEach(s -> System.out.println(s));
-
+*/
     }
 
     public static void main(String[] args) throws FileNotFoundException{

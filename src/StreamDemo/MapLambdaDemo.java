@@ -17,15 +17,23 @@ public class MapLambdaDemo {
                 "film", "game", "fork", "dime",
                 "knife", "spoon", "lame", "card");
         
-        List<Integer> intList = asList(1,2,3,4,5,6,7,8,9);
+        List<Integer> intList = asList(1,2,9,3,4,9,5,6,7,8,9);
 
 
 
          System.out.println(stuff.stream()
                 .map(s -> s.toUpperCase()).toList());
 
+        System.out.println(intList.stream()
+                .map(i -> i + 5).toList());
 
+        System.out.println(intList.stream()
+                .map(i -> i + 5).filter( i -> i <10).toList());
 
+        System.out.println(intList.stream()
+                .distinct().toList());
+
+/*
          List<String> l22 = stuff.stream().map(s -> s.toUpperCase())
                  .toList();
 
@@ -51,7 +59,7 @@ public class MapLambdaDemo {
         System.out.println(stuff.stream().count());
 
         System.out.println(stuff.stream().distinct().toList());
-
+*/
     }
     
     

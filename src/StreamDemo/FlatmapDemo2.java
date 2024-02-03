@@ -22,7 +22,8 @@ public class FlatmapDemo2 {
         System.out.println(personList.stream().flatMap(n -> n.getPhone().stream()).toList());
 
         //Unika telefonnummer
-        System.out.println(personList.stream().flatMap(n -> n.getPhone().stream()).collect(Collectors.toSet()));
+        System.out.println(personList.stream().flatMap(n -> n.getPhone()
+                .stream()).collect(Collectors.toSet()));
 
 
     }

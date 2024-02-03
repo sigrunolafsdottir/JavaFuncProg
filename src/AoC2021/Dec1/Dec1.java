@@ -10,8 +10,7 @@ import java.util.stream.IntStream;
 public class Dec1 {
 
     public int uppgA(String path)  throws IOException{
-        List<Integer> input = Files.lines(Path.of(path))
-                .map(Integer::parseInt).toList();
+        List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
 
         int counter = 0;
         for (int i = 0; i < input.size()-1; i++){
@@ -23,10 +22,12 @@ public class Dec1 {
     }
 
     public long uppgA2(String path)  throws IOException{
-        List<Integer> input = Files.lines(Path.of(path))
-                .map(Integer::parseInt).toList();
+        List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
 
-        return IntStream.range(0, input.size()-1).filter(i ->input.get(i) < input.get(i+1)).count();
+        IntStream.range(1,4);
+
+        return IntStream.range(0, input.size()-1)
+                .filter(i ->input.get(i) < input.get(i+1)).count();
     }
 
     public long uppgA3(String path)  throws IOException{

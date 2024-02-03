@@ -13,11 +13,11 @@ Under "Räven" jobbar "Gråsuggan" och "Myran"
 Under "Myran" jobbar "Bladlusen"
 
 Er uppgift är att illustrera tomtens arbetshierarki i en lämplig datastruktur.
-(Det finns flera tänkbara datastrukturer här)
+(Det finns flera tänkbara datastrukturer här, en List med par med överlydande och
+underlydande eller en Map är tänkbara vägar framåt)
 
 Skriv sedan en funktion där man anger ett namn på tomten eller någon av hens underhuggare som
-inparameter.
-Funktionen listar sedan namnen på alla underlydandesom en given person har
+inparameter. Funktionen returnerar sedan namnen på alla underlydandesom en given nisse har
 Expempel: Du anger "Trötter" och får som svar ["Skumtomten", "Dammråttan"]"
 
 För att bli godkänd på uppgiften måste du använda rekursion.
@@ -26,7 +26,7 @@ För att bli godkänd på uppgiften måste du använda rekursion.
 
 class Tomteland_kopiaAvOrginaluppgiften {
 
-    //TODO: skapa en datastruktur för att lagra tomtarna och deras relationer i
+    //TODO: skapa en datastruktur för att lagra tomtarna och deras hierarkiska relationer i
 
     // current namn är den tomte vars underlydande ni vill ta fram
     //res är listan som håller alla underlydande
@@ -38,7 +38,7 @@ class Tomteland_kopiaAvOrginaluppgiften {
     fun main() {
 
         //Exempel på anrop till den rekursiva funktionen getUnderlings,
-        // här är tanken att hitta Gladers underlydande
+        // här är tanken att hitta Trögers underlydande
         //listan fylls på successivt när vi rekurserar
 
         var list: MutableList<String> = mutableListOf()

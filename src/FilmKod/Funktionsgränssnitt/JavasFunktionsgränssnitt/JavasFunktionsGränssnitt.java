@@ -11,7 +11,7 @@ public class JavasFunktionsGränssnitt {
             }
         };
 
-        Runnable r2 = () -> System.out.println("svjs");
+        Runnable r2 = () -> System.out.println("svejs");
 
         Thread t1 = new Thread(r);
         Thread t2 = new Thread(r2);

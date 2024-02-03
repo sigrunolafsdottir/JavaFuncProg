@@ -13,6 +13,8 @@ public class MathOperationMain {
       int test = 4;
 
       MathOperation addition = (a, b) -> a + b;
+
+      MathOperation altAddition = Integer::sum;
 		
       MathOperation subtraction = (a, b) -> a - b;
 		
@@ -25,6 +27,7 @@ public class MathOperationMain {
       MathOperation division = (a,  b) -> a / b;
 
       System.out.println(addition.operation(1,2));
+      System.out.println(altAddition.operation(1,2));
       System.out.println(subtraction.operation(1,2));
       System.out.println(multiplication.operation(1,2));
       System.out.println(division.operation(1,2));
@@ -34,7 +37,7 @@ public class MathOperationMain {
       System.out.println("10 x 5 = " + operate(10, 5, multiplication));
       System.out.println("10 / 5 = " + operate(10, 5, division));
 
-      
+      System.out.println();
       //Uppgift 2b
       //MathOperation addition = (a, b) -> a + b;
       //MathOperation subtraction = (a, b) -> a - b;

@@ -23,7 +23,7 @@ public class ReduceDemo {
                   .reduce(0, (acc, number) -> acc + number));
 
         //konkaternering med aaaa först
-        System.out.println(stuff.stream().reduce("", (acc, s) -> acc+=s));
+        System.out.println(stuff.stream().reduce("", (acc, s) -> acc+=s.toUpperCase()));
 
         //konkaternering av alla ord med "am" i sig
         System.out.println(stuff.stream()

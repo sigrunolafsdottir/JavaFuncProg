@@ -28,7 +28,7 @@ public class FlatmapDemo {
         System.out.println(deepList.stream().
                 flatMap(l -> l.stream()).toList());
 
-
+        System.out.println();
 
         System.out.println(deepList2);
 

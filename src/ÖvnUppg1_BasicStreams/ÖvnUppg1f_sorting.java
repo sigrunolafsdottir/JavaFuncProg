@@ -53,6 +53,7 @@ public class ÖvnUppg1f_sorting {
         System.out.println();
         getBooksInRatingOrder(list);
         System.out.println();
+
         getTitlesInOrder(list);
         System.out.println();
         getTitlesInOrder2(list);
