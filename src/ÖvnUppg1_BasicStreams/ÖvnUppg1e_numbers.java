@@ -13,6 +13,10 @@ public class ÖvnUppg1e_numbers {
         return list.stream().mapToDouble(e -> e.getRating()).sum() / list.size();
     }
 
+    public double getAverageGrade3(List<Book> list){
+        return list.stream().mapToDouble(e -> e.getRating()).average().getAsDouble();
+    }
+
     public double getAverageGrade2(List<Book> list){
         return list.stream().mapToDouble(e -> e.getRating()).summaryStatistics().getAverage();
     }

@@ -36,8 +36,10 @@ public class ÖvnUppg1h_maps {
     public ÖvnUppg1h_maps(){
 
         List<Book> list = BookUtil.getBookList();
+
         thisIsFact(list).forEach(
-                (k,v )-> System.out.println(k+" "+v.stream()
+               // (k,v )-> System.out.println(k+" "+v));
+            (k,v )-> System.out.println(k+" "+v.stream()
                                 .map(Book::getTitle).toList()));
 
         System.out.println();
@@ -46,12 +48,12 @@ public class ÖvnUppg1h_maps {
 
 
 
-        System.out.println();
+        System.out.println("1");
         authorMap(list).forEach(
                 (k,v )-> System.out.println(k+" "+v.stream()
                         .map(Book::getTitle).toList()));
 
-        System.out.println();
+        System.out.println("2");
         colorMap(list).forEach(
                 (k,v )-> System.out.println(k+" "+v.stream()
                         .map(Book::getTitle).toList()));

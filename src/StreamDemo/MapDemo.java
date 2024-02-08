@@ -22,10 +22,12 @@ public class MapDemo {
                 "Doris", "Elmer", "Hilma");
         
         //Skapar en map där namnen i names är nycklar och deras längder är värden
-        Map<String, Integer> nameLengthTracker = names.stream()
+        final Map<String, Integer> nameLengthTracker = names.stream()
                 .collect(Collectors.toMap(p -> p, n -> n.length()));
 
         nameLengthTracker.forEach((k,v) -> System.out.println(k +" "+v));
+
+        System.out.println();
 
         System.out.println(nameLengthTracker.entrySet());
         System.out.println(nameLengthTracker.keySet());

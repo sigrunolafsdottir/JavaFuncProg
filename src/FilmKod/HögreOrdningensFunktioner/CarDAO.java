@@ -11,7 +11,7 @@ public class CarDAO {
     private final Car c3 = new Car("BBB222",
             "Pelle","Audi", "Gul");
     private final Car c4 = new Car("CCC333",
-            "Lotta","Tesla", "svart");
+            "Lotta","Tesla", "black");
     private final Car c5 = new Car("DDD444",
             "Nisse","Kia", "Silver");
 

@@ -11,7 +11,7 @@ public class HögreOrdningensFunktionsDemo {
 
     CarSearcherInterface regNrSök = (c, s) ->   c.getRegNr().equalsIgnoreCase(s);
 
-    CarSearcherInterface colorSök = (c, s) ->   c.getColor().equalsIgnoreCase(s);
+    CarSearcherInterface colorSök = (c, s) ->   c.getColor().startsWith(s);
 
     CarSearcherInterface ownerSök = (c, s) ->   c.getOwner().equalsIgnoreCase(s);
 

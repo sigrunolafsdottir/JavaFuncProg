@@ -14,11 +14,9 @@ public class PrimitiveDemo {
         
         List<Integer> intList = asList(1,2,3,4,5,6,7,8,9);
 
-
         System.out.println(intList.stream().mapToInt(Integer::intValue).sum());
         System.out.println(intList.stream().mapToInt(i -> i.intValue()).sum());
         System.out.println(intList.stream().mapToInt(e -> e).sum());
-
 
         List<Double> doubleList = asList(4.9, 5.9);
         System.out.println(doubleList.stream().mapToDouble(Double::intValue).sum());  //floorar doubles
@@ -41,7 +39,9 @@ public class PrimitiveDemo {
                 mapToInt(Integer::valueOf).summaryStatistics().getAverage());
 
         System.out.println();
-/*
+
+
+
         //Optional
         List<Integer> emptyList = asList();
 
@@ -58,7 +58,7 @@ public class PrimitiveDemo {
         System.out.println(emptyList.stream().mapToInt(e -> e).max().orElse(0));
         System.out.println(emptyList.stream().mapToInt(e -> e).max().getAsInt());
 
-*/
+
     }
     
     

@@ -23,8 +23,7 @@ public class Dec1 {
 
     public long uppgA2(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
-
-        IntStream.range(1,4);
+        //[0,1,2,3,4,5,6, osv]
 
         return IntStream.range(0, input.size()-1)
                 .filter(i ->input.get(i) < input.get(i+1)).count();

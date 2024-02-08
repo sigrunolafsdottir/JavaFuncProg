@@ -35,14 +35,14 @@ public class ÖvnUppg4_Facit {
     public List<String> getAllAnswerOptionsDistinct(){
         return questions.stream().map(Question::getAllAnswers)
                 .flatMap(value -> value.stream()).distinct()
-                .collect(Collectors.toList());
+                .toList();
     }
 
 
     //G. Lista alla frågesträngar där frågan tillhör en viss kategori
     public List<String> getAllQuestionStringsBelongingACategory(Category category){
         return questions.stream().filter(c -> c.getCategory().equals(category))
-                .map(Question::getQuestionString).collect(Collectors.toList());
+                .map(Question::getQuestionString).toList();
     }
 
     //VG. Finns en viss given sträng som svarsalternativ till någon fråga i vår databas?

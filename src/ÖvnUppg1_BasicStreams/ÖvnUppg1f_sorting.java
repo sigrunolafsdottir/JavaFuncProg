@@ -36,7 +36,7 @@ public class ÖvnUppg1f_sorting {
 
         List<Book> sorted = list.stream()
                 .sorted(Comparator.comparing(b -> b.getAuthor().split(" ")[1], coll))
-                .collect(Collectors.toList());
+                .toList();
 
         sorted.forEach(b -> System.out.println(b.getAuthor()+" "+b.getTitle()));
 

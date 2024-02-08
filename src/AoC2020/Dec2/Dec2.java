@@ -32,11 +32,20 @@ public class Dec2 {
         return counter;
     }
 
+    public long checkAllPassports2(PasswordChecker checker, String path) throws IOException {
+        return Files.lines(Path.of(path))
+                .map(s -> s.trim().split("[-: ]"))
+                .filter(x -> checker.check(x[4], x[2].trim().charAt(0),
+                Integer.parseInt(x[0]), Integer.parseInt(x[1]))).count();
+    }
+
     public Dec2() throws IOException {
         System.out.println(checkAllPassports(checkA, "src/AoC2020/Dec2/input_mini.txt"));
         System.out.println(checkAllPassports(checkA, "src/AoC2020/Dec2/input.txt"));
+        System.out.println(checkAllPassports2(checkA, "src/AoC2020/Dec2/input.txt"));
         System.out.println(checkAllPassports(checkB, "src/AoC2020/Dec2/input_mini.txt"));
         System.out.println(checkAllPassports(checkB, "src/AoC2020/Dec2/input.txt"));
+        System.out.println(checkAllPassports2(checkB, "src/AoC2020/Dec2/input.txt"));
     }
 
 
