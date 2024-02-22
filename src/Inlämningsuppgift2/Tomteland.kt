@@ -38,7 +38,7 @@ class Tomteland {
     fun main() {
 
         //Exempel på anrop till den rekursiva funktionen getUnderlings,
-        // här är tanken att hitta Gladers underlydande
+        // här är tanken att hitta Tröger underlydande
         //listan fylls på successivt när vi rekurserar
 
         var list: MutableList<String> = mutableListOf()
