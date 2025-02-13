@@ -9,7 +9,9 @@ import org.bson.Document;
 
 public class MongoClientConnectionExample {
     public static void main(String[] args) {
-        String connectionString = "mongodb+srv://trashyUser:XOTUUkQaP2sTiP4C@cluster0.zvvm4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+        String connectionString = "mongodb+srv://<your-username>:<your-password>@<yourCluster>.mongodb.net/?retryWrites=true&w=majority";
+
         ServerApi serverApi = ServerApi.builder()
                 .version(ServerApiVersion.V1)
                 .build();
