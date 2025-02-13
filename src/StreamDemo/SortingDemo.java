@@ -13,6 +13,12 @@ import java.util.stream.Stream;
 
 public class SortingDemo {
 
+    List<Person> personList = List.of(
+            new Person("Kalle", 24, "Swedish", List.of("765543", "4536")),
+            new Person("Chuck", 23, "USA", List.of("7654", "24646")),
+            new Person("Karen", 56, "Denmark", List.of("765543", "23454")),
+            new Person("Dieter", 43, "Germany", List.of("54364", "87676")));
+
 
     public SortingDemo() throws FileNotFoundException {
 
@@ -56,6 +62,10 @@ public class SortingDemo {
         System.out.println(stuff.stream()
                 .sorted(svenskCollator.reversed()).toList());
 
+// sortera personer efter namn
+        System.out.println(personList.stream()
+                .sorted((p1, p2) -> p1.getName().compareToIgnoreCase(p2.getName()))
+                .map(Person::getName).toList());
 
 
     }
