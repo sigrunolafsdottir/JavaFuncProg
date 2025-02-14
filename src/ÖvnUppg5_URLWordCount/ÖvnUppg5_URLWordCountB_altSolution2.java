@@ -22,8 +22,9 @@ public class ÖvnUppg5_URLWordCountB_altSolution2 {
 
         Map<Integer, Integer> pocket = words
                 .lines()
-                .collect(Collectors.groupingBy(String::length))
-                .values().stream()
+                .collect(Collectors.groupingBy(String::length))  // 3: [aaa, bbb]
+                .values()   //ger oss en lista med bara värdena
+                .stream()
                 .collect(Collectors.toMap(e -> e.get(0).length(), List::size));
 
         pocket.forEach((k,v) -> System.out.println(k +" "+v));

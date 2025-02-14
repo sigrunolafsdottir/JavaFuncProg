@@ -9,8 +9,8 @@ public interface StringOperator {
         return s -> after.apply(this.apply(s));
     }
 
-
-
+//resultat: ygplan
+// System.out.println(replaceFirstWithLast.andThen(chopLetters).apply("flygplan"));
 
     default StringOperator andThen2(StringOperator after){
         return s -> {

@@ -17,7 +17,7 @@ public class FilterDemo {
                 "film", "game", "fork", 
                 "knife", "spoon", "lame");
 
-        stuff.stream().filter(s -> s.contains("i")).forEach(s-> System.out.println(s));
+        stuff.stream().filter(str -> str.contains("i")).forEach(s-> System.out.println(s));
         System.out.println();
 
         stuff.stream().filter(s -> s.contains("i")).filter(s -> s.contains("m"))

@@ -52,11 +52,14 @@ public class PrimitiveDemo {
         System.out.println(emptyList.stream().
                 mapToInt(Integer::valueOf).summaryStatistics().getSum());
 
+        System.out.println();
         System.out.println(intList.stream().mapToInt(e -> e).max());
         System.out.println(intList.stream().mapToInt(e -> e).max().getAsInt());
         System.out.println(emptyList.stream().mapToInt(e -> e).max());
         System.out.println(emptyList.stream().mapToInt(e -> e).max().orElse(0));
         System.out.println(emptyList.stream().mapToInt(e -> e).max().getAsInt());
+        //System.out.println(emptyList.stream().mapToInt(e -> e).max().getAsInt().orElse(0));
+        //System.out.println(emptyList.stream().mapToInt(e -> e).max().orElse(0).getAsInt());
 
 
     }

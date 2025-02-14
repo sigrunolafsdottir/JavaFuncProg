@@ -1,22 +1,18 @@
 package ÖvnUppg5_URLWordCount;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Collection;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
-public class ÖvnUppg5_URLWordCountB {
+public class ÖvnUppg5_URLWordCountB_overlyVerbose {
 
-    public ÖvnUppg5_URLWordCountB ()  throws IOException {
+    public ÖvnUppg5_URLWordCountB_overlyVerbose()  throws IOException {
 
             URL url = new URL("https://github.com/dwyl/english-words/blob/master/words.txt?raw=true");
             
@@ -40,6 +36,6 @@ public class ÖvnUppg5_URLWordCountB {
     }
     
     public static void main(String[] args) throws IOException{
-        ÖvnUppg5_URLWordCountB ö = new ÖvnUppg5_URLWordCountB();
+        ÖvnUppg5_URLWordCountB_overlyVerbose ö = new ÖvnUppg5_URLWordCountB_overlyVerbose();
     }
 }

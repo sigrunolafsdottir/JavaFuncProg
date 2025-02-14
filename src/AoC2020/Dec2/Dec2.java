@@ -36,7 +36,8 @@ public class Dec2 {
         return Files.lines(Path.of(path))
                 .map(s -> s.trim().split("[-: ]"))
                 .filter(x -> checker.check(x[4], x[2].trim().charAt(0),
-                Integer.parseInt(x[0]), Integer.parseInt(x[1]))).count();
+                        Integer.parseInt(x[0]), Integer.parseInt(x[1])))
+                .count();
     }
 
     public Dec2() throws IOException {

@@ -2,10 +2,8 @@ package StreamDemo;
 
 
 import LambdaKataFacit.Person;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.partitioningBy;
@@ -20,6 +18,33 @@ public class MapDemo {
         //Initializing lists
         names = Arrays.asList("Anna", "Bertil", "Camilla", 
                 "Doris", "Elmer", "Hilma");
+
+        //Skapa en Map rakt av:
+        //Map.of skapar en immutable Map
+        Map<String, List<String>> colorAssociations1 = Map.of(
+                "red", List.of("anger", "blood"),
+                "blue", List.of("sky", "sadness", "bluebelles"),
+                "yellow", List.of("sun", "sunflowers", "eggyolks")
+        );
+
+        //FÖljande kommer att ge fel, pga. immutable
+        //colorAssociations1.put("white", List.of("snow"));
+        //colorAssociations1.get("red").add("blue");
+
+        System.out.println(colorAssociations1);
+
+        //Another way to crate a map, this one is mutable
+        Map<String, List<String>> colorAssociations2 = new HashMap<>();
+        colorAssociations2.put("red", new ArrayList<>(List.of("anger", "blood")));
+        colorAssociations2.put("blue", new ArrayList<>(List.of("sky", "sadness", "bluebelles")));
+        colorAssociations2.put("yellow", new ArrayList<>(List.of("sun", "sunflowers", "eggyolks")));
+
+        colorAssociations2.put("white", List.of("snow"));
+        colorAssociations2.get("red").add("tomato");
+
+        System.out.println(colorAssociations2);
+
+
         
         //Skapar en map där namnen i names är nycklar och deras längder är värden
         final Map<String, Integer> nameLengthTracker = names.stream()

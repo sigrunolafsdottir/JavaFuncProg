@@ -9,8 +9,40 @@ import java.util.stream.IntStream;
 
 public class Dec1 {
 
+
+    public void demo() throws IOException {
+        String path = "src/AoC2021/Dec1/input_mini.txt";
+        List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
+
+        //System.out.println(input);
+        int counter = 0;
+        for (int i = 0; i < input.size()-1; i++) {
+            if (input.get(i) < input.get(i+1)) {
+                counter++;
+            }
+        }
+        System.out.println("lösning 1: "+counter);
+
+        System.out.println("lösning 2: "+IntStream.range(0, input.size()-1)
+                .filter(i -> input.get(i) < input.get(i+1)).count());
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public int uppgA(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
+
 
         int counter = 0;
         for (int i = 0; i < input.size()-1; i++){
@@ -28,6 +60,8 @@ public class Dec1 {
         return IntStream.range(0, input.size()-1)
                 .filter(i ->input.get(i) < input.get(i+1)).count();
     }
+
+
 
     public long uppgA3(String path)  throws IOException{
         List<Integer> input = Files.lines(Path.of(path))
@@ -53,6 +87,7 @@ public class Dec1 {
     public static void main(String[] args) throws IOException{
 
         Dec1 d = new Dec1();
+        /*
         System.out.println("Uppg A, FilmKod.IntroFP.test: " + d.uppgA("src/AoC2021/Dec1/input_mini.txt"));
         System.out.println("Uppg A: " + d.uppgA("src/AoC2021/Dec1/input.txt"));
         System.out.println();
@@ -64,6 +99,10 @@ public class Dec1 {
         System.out.println();
         System.out.println("Uppg B, FilmKod.IntroFP.test: " + d.uppgB("src/AoC2021/Dec1/input_mini.txt", 3));
         System.out.println("Uppg B: " + d.uppgB("src/AoC2021/Dec1/input.txt", 3));
+
+         */
+
+        d.demo();
 
     }
 

@@ -26,6 +26,9 @@ public class MathOperationMain {
 		
       MathOperation division = (a,  b) -> a / b;
 
+
+      System.out.println(operate(1,2, (a, b) -> a + b));
+
       System.out.println(addition.operation(1,2));
       System.out.println(altAddition.operation(1,2));
       System.out.println(subtraction.operation(1,2));
@@ -44,10 +47,13 @@ public class MathOperationMain {
       //return (i, j) -> m.operation(i, j) + operation(i, j);
       // (10-5)+(10+5) = 20
 
-      //TODO skriv fler exempel där ordningen spelar roll
+
+      // add: return (i, j) -> m.operation(i, j) + operation(i, j);
       MathOperation justTesting = addition.add(subtraction);
 
       System.out.println("justtesting: "+justTesting.operation(3,4));
+
+      System.out.println("justtesting2: "+addition.add(subtraction).operation(3,4));
       //  (-1) + 7 = 6
 
       //(i, j) -> operation(m.operation(i,j), operation(i,j));
@@ -65,6 +71,7 @@ public class MathOperationMain {
       MathOperation test4 = multiplication.andThen(addition);
 
       System.out.println(test4.operation(1,2));
+
 		
    }
 }

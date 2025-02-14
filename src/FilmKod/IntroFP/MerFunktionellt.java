@@ -4,8 +4,8 @@ public class MerFunktionellt {
 
     final int i = 5;
 
-    int adder(int i){
-        return i +6;
+    int adder(int ix){
+        return ix +6;
     }
 
     public MerFunktionellt(){

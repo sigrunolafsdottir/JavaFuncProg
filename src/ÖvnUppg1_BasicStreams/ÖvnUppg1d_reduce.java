@@ -12,7 +12,7 @@ public class ÖvnUppg1d_reduce {
     }
 
     public String getallTitles(List<Book> list){
-        return list.stream().map(Book::getTitle)
+        return list.stream().map(Book::getTitle)    //["titel1, titel2 osv"]
                 .reduce("", (u, e) -> u + e + ", ") ;
     }
 

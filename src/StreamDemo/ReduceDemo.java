@@ -22,13 +22,13 @@ public class ReduceDemo {
         System.out.println(intList.stream()
                   .reduce(0, (acc, number) -> acc + number));
 
-        //konkaternering med aaaa först
-        System.out.println(stuff.stream().reduce("", (acc, s) -> acc+=s.toUpperCase()));
+        System.out.println(stuff.stream()
+                .reduce("", (acc, s) -> acc+=(s.toUpperCase() + ", ")));
 
         //konkaternering av alla ord med "am" i sig
         System.out.println(stuff.stream()
                   .filter(s -> s.contains("am"))
-                  .reduce("", (sacc, s2) -> sacc+=s2));
+                  .reduce("aaaaaa ", (sacc, s2) -> sacc+=s2));
 
     }
     

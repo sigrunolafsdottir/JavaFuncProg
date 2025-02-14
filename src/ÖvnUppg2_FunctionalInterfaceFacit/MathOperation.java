@@ -16,13 +16,13 @@ public interface MathOperation {
           return (a, b) -> operation(m.operation(a,b), operation(a,b));
     }
 
-    default String test(Integer i){
+      default String test(Integer i){
           return "hej";
       }
 
 
-    default MathOperation andThen(MathOperation after){
-        return (i, j) -> after.operation(operation(i,j), operation(i,j));
+        default MathOperation andThen(MathOperation after){
+            return (i, j) -> after.operation(operation(i,j), operation(i,j));
     }
 
 }

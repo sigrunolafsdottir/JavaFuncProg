@@ -35,7 +35,17 @@ public class Person {
         this.nationality = nationality;
         this.phone = phones;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", nationality='" + nationality + '\'' +
+                ", phone=" + phone +
+                '}';
+    }
+
     public int getAge(){
         return age;
     }

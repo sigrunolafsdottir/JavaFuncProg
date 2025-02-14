@@ -5,7 +5,7 @@ public class InteSåFunktionellt {
     int i = 5;
 
     int adder(){
-        i = i +6;
+        i = i +6;  //hemlig mutering av variabel
         return i;
     }
 
