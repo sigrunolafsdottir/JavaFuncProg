@@ -31,6 +31,8 @@ public class MapDemo {
         //colorAssociations1.put("white", List.of("snow"));
         //colorAssociations1.get("red").add("blue");
 
+        System.out.println(colorAssociations1.get("red"));
+
         System.out.println(colorAssociations1);
 
         //Another way to crate a map, this one is mutable

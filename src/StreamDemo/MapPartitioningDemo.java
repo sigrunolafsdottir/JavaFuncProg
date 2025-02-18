@@ -21,6 +21,9 @@ public class MapPartitioningDemo {
         numbers = Arrays.asList(15, 65, 23, 567, 1, 345, 33, 78,
                 976, 1005);
 
+        List<String> names = Arrays.asList("Anna", "Bertil", "Camilla",
+                "Doris", "Elmer", "Hilma");
+
         
         //PartitioningBy, vi delar upp numbers efter vilka nummer som är större eller mindre än 50
 
@@ -32,6 +35,12 @@ public class MapPartitioningDemo {
         System.out.println(under50.get(false));
         System.out.println(" ");
         System.out.println(under50.get(true));
+        System.out.println();
+
+        Map<Boolean, List<String>> nametest = names.stream()
+                .collect(partitioningBy(n -> n.length() < 6));
+
+        nametest.forEach((k,v) -> System.out.println(k +" "+v));
 
     }
 

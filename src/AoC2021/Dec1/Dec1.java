@@ -4,17 +4,20 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.IntStream;
+
+import static java.util.stream.Collectors.partitioningBy;
 
 public class Dec1 {
 
 
     public void demo() throws IOException {
-        String path = "src/AoC2021/Dec1/input_mini.txt";
+        String path = "src/AoC2021/Dec1/input.txt";
         List<Integer> input = Files.lines(Path.of(path)).map(Integer::parseInt).toList();
 
-        //System.out.println(input);
+        System.out.println(input);
         int counter = 0;
         for (int i = 0; i < input.size()-1; i++) {
             if (input.get(i) < input.get(i+1)) {
@@ -25,6 +28,8 @@ public class Dec1 {
 
         System.out.println("lösning 2: "+IntStream.range(0, input.size()-1)
                 .filter(i -> input.get(i) < input.get(i+1)).count());
+
+
 
     }
 

@@ -29,7 +29,7 @@ public class MapGroupByDemo {
 
         wordLength.forEach((k,v) -> System.out.println(k +" "+v));
 
-        System.out.println(wordLength.get(5));
+        //System.out.println(wordLength.get(5));
         
     }
 

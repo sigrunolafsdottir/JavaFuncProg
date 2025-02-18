@@ -26,6 +26,8 @@ public class MapCountingDemo {
 
         System.out.println(frequencyMap);
 
+        System.out.println(frequencyMap.get(1));
+
     }
 
     public static void main(String[] args){
