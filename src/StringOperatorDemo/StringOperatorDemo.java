@@ -24,6 +24,8 @@ public class StringOperatorDemo {
 
         StringOperator lowerCase = i -> "hej";
 
+
+
 /*
         System.out.println(chopLetters.apply("hej"));
         System.out.println(replaceFirstWithLast.apply("hej"));
