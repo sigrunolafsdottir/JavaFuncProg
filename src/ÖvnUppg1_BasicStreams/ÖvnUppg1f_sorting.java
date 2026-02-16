@@ -1,5 +1,7 @@
 package ÖvnUppg1_BasicStreams;
 
+import krafs.Person;
+
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1f_sorting {
 
+    //inte så bra för titlarna kastas bort
     public void getBooksInRatingOrder2(List<Book> list){
         list.stream().map(Book::getRating)
                 .sorted().forEach(b -> System.out.println(b));
@@ -17,6 +20,13 @@ public class ÖvnUppg1f_sorting {
 
     public void getBooksInRatingOrder(List<Book> list){
         list.stream().sorted((p1, p2) -> ((Integer)p1.getRating()).compareTo(p2.getRating()))
+                .forEach(b -> System.out.println(b.getTitle()));
+
+    }
+
+    //nyare sätt att sortera efter en viss variabel
+    public void getBooksInRatingOrder3(List<Book> list){
+        list.stream().sorted(Comparator.comparing(Book::getRating))
                 .forEach(b -> System.out.println(b.getTitle()));
 
     }
@@ -52,6 +62,8 @@ public class ÖvnUppg1f_sorting {
         getBooksInRatingOrder2(list);
         System.out.println();
         getBooksInRatingOrder(list);
+        System.out.println();
+        getBooksInRatingOrder3(list);
         System.out.println();
 
         getTitlesInOrder(list);
