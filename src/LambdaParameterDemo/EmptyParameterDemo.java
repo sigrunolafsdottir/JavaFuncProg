@@ -13,7 +13,7 @@ public class EmptyParameterDemo {
      };
      
      // Lambda Runnable
-     Runnable r2 = () -> System.out.println("Hello world two!");
+     Runnable r2 = () -> System.out.println("Hello world three!");
      
      // Run em!
      Thread t1 = new Thread(r1);

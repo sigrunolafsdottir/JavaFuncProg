@@ -23,8 +23,12 @@ public class MapDemo {
         phoneNumbers.put("skravlan", List.of("1111111"));
         phoneNumbers.put("doris", List.of("22222"));
         phoneNumbers.forEach((k, v) -> System.out.println(k+" "+v));
+        System.out.println();
 
         System.out.println(phoneNumbers.entrySet());
+
+        System.out.println(phoneNumbers.entrySet().stream().filter(e -> e.getValue().size() == 1)
+                .findFirst().get().getValue());
 
 
     }

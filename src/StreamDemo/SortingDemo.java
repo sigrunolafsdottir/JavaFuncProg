@@ -67,6 +67,11 @@ public class SortingDemo {
                 .sorted((p1, p2) -> p1.getName().compareToIgnoreCase(p2.getName()))
                 .map(Person::getName).toList());
 
+        // sortera personer efter namn
+        System.out.println(personList.stream()
+                .sorted(Comparator.comparing(Person::getName))
+                .map(Person::getName).toList());
+
 
     }
 

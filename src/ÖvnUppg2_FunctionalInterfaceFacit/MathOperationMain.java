@@ -34,7 +34,8 @@ public class MathOperationMain {
       System.out.println(subtraction.operation(1,2));
       System.out.println(multiplication.operation(1,2));
       System.out.println(division.operation(1,2));
-		
+
+       System.out.println("10 + 5 = " + operate(10, 5, (x,y) -> x + y));
       System.out.println("10 + 5 = " + operate(10, 5, addition));
       System.out.println("10 - 5 = " + operate(10, 5, subtraction));
       System.out.println("10 x 5 = " + operate(10, 5, multiplication));

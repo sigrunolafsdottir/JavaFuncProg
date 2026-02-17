@@ -10,7 +10,7 @@ public class DAO {
     private final Kompis Anna = new Kompis("Anna", "Kungsgatan 12, 12456 Stockholm",
             "43353453", 34);
     private final Kompis Bertil = new Kompis("Bertil",
-            "Drottninggatan 3 12, 1226 Stockholm","765757575", 45);
+            "Drottninggatan 3 12, 1226 Stockholm","765757575", 34);
     private final Kompis Cecil = new Kompis("Cecil",
             "Allgatan 12, 12456 Stockholm","87655464564", 55);
     private final Kompis Danne = new Kompis("Danne",

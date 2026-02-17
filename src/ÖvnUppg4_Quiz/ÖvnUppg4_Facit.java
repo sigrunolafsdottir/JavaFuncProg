@@ -17,6 +17,7 @@ public class ÖvnUppg4_Facit {
         return  (int) questions.stream().count();
     }
 
+
     //G. Lista alla frågesträngar
     public List<String> getListOfAllQuestions(){
         return questions.stream().map(Question::getQuestionString)

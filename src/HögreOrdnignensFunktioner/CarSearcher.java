@@ -20,6 +20,8 @@ public class CarSearcher {
 
     BiPredicate p = (c, s) -> ((Car)c).getColor().equalsIgnoreCase((String) s);
 
+
+
 //gamla: cars.stream().filter(c -> c.getOwner().equalsIgnoreCase(ägare)).map(Car::getRegnr).toList();
     public List<String> sök (String phrase, CarSearcherInterface cs) {
         return cars.stream().filter(c -> cs.search(c, phrase)).map(Car::getRegnr).toList();
@@ -43,9 +45,9 @@ public class CarSearcher {
             phrase = scanner.next();
 
             switch(term) {
-                case "färg"-> System.out.println(sök(phrase, (c, s) -> c.getColor().equalsIgnoreCase(s)));
+                case "färg"-> System.out.println(sök(phrase, färgsök));
                 case "ägare" ->System.out.println(sök(phrase, ägarsök));
-                case "reg" ->System.out.println(sök(phrase, regsök));
+                case "reg" ->System.out.println(sök(phrase, (c, s) -> c.getRegNr().equalsIgnoreCase(s)));
                 case "pred" ->System.out.println(sök2(phrase, p));
                 default -> System.out.println("Du måste skriva antingen färg, ägare, reg");
             }

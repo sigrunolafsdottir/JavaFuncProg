@@ -7,10 +7,6 @@ public interface MathOperation {
       int operation(int a, int b);
 
 
-
-
-
-
       //uppgift 2b. GÖr inget vettigt
     //MathOperation justTesting = addition.add(subtraction);
       default MathOperation add(MathOperation m){

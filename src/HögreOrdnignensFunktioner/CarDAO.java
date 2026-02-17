@@ -3,6 +3,7 @@ package HögreOrdnignensFunktioner;
 import java.util.ArrayList;
 import java.util.List;
 
+//Data Access Object
 public class CarDAO {
 
     private final Car c1 = new Car("QWE123", "Kalle", "Saab", "Röd");

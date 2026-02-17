@@ -10,6 +10,7 @@ public class SingleDigitOperationMain {
 
       SingleDigitOperation quadrate = a  -> a * a;
       SingleDigitOperation checkPositive = a ->  {if (a >= 0) return 1; else  return 0;};
+
       
       System.out.println(quadrate.operate(4));
       System.out.println(quadrate.operate(-2));
