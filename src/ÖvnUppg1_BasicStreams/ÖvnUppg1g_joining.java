@@ -5,16 +5,16 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1g_joining {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public String getAllTitles(List<Book> list){
         return list.stream().map(Book::getTitle)
                 .collect(Collectors.joining(", ", "" , ""));
     }
 
 
-
     public ÖvnUppg1g_joining(){
 
-        List<Book> list = BookUtil.getBookList();
         System.out.println(getAllTitles(list));
     }
 

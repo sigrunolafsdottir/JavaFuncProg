@@ -8,7 +8,7 @@ public class SwitchDemo {
         String s = IO.readln();
 
         //Nedanståene SER UT som labdas, men de bygger inte på ett funktionsgränssnitt utan är
-        //syntaxtiskt socker på vanliga switch-syntaxen
+        //syntaxtiskt socker för vanliga switch-syntaxen
         String str = switch(s) {
             case "1", "5" -> "en etta eller femma";
             case "2" -> "en tvåa";

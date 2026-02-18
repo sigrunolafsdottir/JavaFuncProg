@@ -21,7 +21,7 @@ public class ÖvnUppg4_Facit {
     //G. Lista alla frågesträngar
     public List<String> getListOfAllQuestions(){
         return questions.stream().map(Question::getQuestionString)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     //G. Hitta antalet frågor för en viss, given kategori

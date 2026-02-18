@@ -1,6 +1,5 @@
 package ÖvnUppg1_BasicStreams;
 
-import krafs.Person;
 
 import java.text.Collator;
 import java.util.Comparator;
@@ -9,6 +8,8 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class ÖvnUppg1f_sorting {
+
+    final List<Book> list = BookUtil.getBookList();
 
     //inte så bra för titlarna kastas bort
     public void getBooksInRatingOrder2(List<Book> list){
@@ -58,7 +59,6 @@ public class ÖvnUppg1f_sorting {
 
     public ÖvnUppg1f_sorting(){
 
-        List<Book> list = BookUtil.getBookList();
         getBooksInRatingOrder2(list);
         System.out.println();
         getBooksInRatingOrder(list);

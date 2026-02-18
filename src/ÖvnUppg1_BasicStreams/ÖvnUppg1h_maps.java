@@ -7,6 +7,8 @@ import static java.util.stream.Collectors.*;
 
 public class ÖvnUppg1h_maps {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public Map<Boolean, List<Book>> thisIsFact(List<Book> list){
         return list.stream().collect(partitioningBy(b -> b.isFact()));
     }
@@ -35,8 +37,6 @@ public class ÖvnUppg1h_maps {
 
     public ÖvnUppg1h_maps(){
 
-        List<Book> list = BookUtil.getBookList();
-
         thisIsFact(list).forEach(
                // (k,v )-> System.out.println(k+" "+v));
             (k,v )-> System.out.println(k+" "+v.stream()
@@ -45,7 +45,6 @@ public class ÖvnUppg1h_maps {
         System.out.println();
         thisIsFact2(list).forEach(
                 (k,v )-> System.out.println(k+" "+v));
-
 
 
         System.out.println("1");

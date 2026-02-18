@@ -1,6 +1,8 @@
 package LiveDemonPP;
 
 import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.Predicate;
 
 public class MyLibrary {
 
@@ -28,8 +30,15 @@ public class MyLibrary {
                 .stream()
                 .filter(b -> b.getOwner().equalsIgnoreCase(owner))
                 .count();
-
     }
+
+    public List<Book> higherOrderFunction(BiPredicate<Book, String> p, List<Book> mybooks, String s) {
+        return mybooks
+                .stream()
+                .filter(b -> p.test(b, s))
+                .toList();
+    }
+
 
 
     void main(){
@@ -51,6 +60,14 @@ public class MyLibrary {
 
         System.out.println();
         IO.println(numberOfBooksBelongingTo("sigrun", books));
+
+        System.out.println();
+        BiPredicate<Book, String> bp =  (b, s) -> b.getColor().equalsIgnoreCase(s);
+        BiPredicate<Book, String> bp2 =  (b, s) -> b.getAuthor().equalsIgnoreCase(s);
+
+        higherOrderFunction(bp, books, "grön").forEach(b -> System.out.println(b.getTitle()));
+        higherOrderFunction(bp2, books, "Kim Stanley Robinson").forEach(b -> System.out.println(b.getTitle()));
+
 
     }
 

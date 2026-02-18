@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1a_filter {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public List<Book> getAllBooksByAnAuthor(String author, List<Book> list){
         return list.stream().filter(s -> s.getAuthor().equalsIgnoreCase(author))
                 .toList();
@@ -28,7 +30,6 @@ public class ÖvnUppg1a_filter {
 
     public ÖvnUppg1a_filter(){
 
-        List<Book> list = BookUtil.getBookList();
         getAllBooksByAnAuthor("J.R.R. Tolkien", list)
                 .forEach(b -> System.out.println(b.getTitle()));
 

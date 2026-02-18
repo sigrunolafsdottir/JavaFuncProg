@@ -4,6 +4,8 @@ import java.util.List;
 
 public class ÖvnUppg1e_numbers {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public long getAmountOfBooks(List<Book> list){
         return list.stream().filter(b -> b.getOwner().equalsIgnoreCase("Sigrun"))
                 .filter(b -> b.getColor().equalsIgnoreCase("röd")).count();
@@ -33,7 +35,6 @@ public class ÖvnUppg1e_numbers {
 
     public ÖvnUppg1e_numbers(){
 
-        List<Book> list = BookUtil.getBookList();
         System.out.println(getAmountOfBooks(list));
         System.out.println(getAverageGrade(list));
         System.out.println(getAverageGrade2(list));

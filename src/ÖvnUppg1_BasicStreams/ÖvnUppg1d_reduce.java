@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1d_reduce {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public double getAverageGrade(List<Book> list){
         return list.stream().map(Book::getDoubleRating)
                 .reduce(0.0, (u, e) -> u+e) / list.size();
@@ -16,11 +18,8 @@ public class ÖvnUppg1d_reduce {
                 .reduce("", (u, e) -> u + e + ", ") ;
     }
 
-
-
     public ÖvnUppg1d_reduce(){
 
-        List<Book> list = BookUtil.getBookList();
         System.out.println(getAverageGrade(list));
         System.out.println(getallTitles(list));
     }

@@ -1,8 +1,7 @@
 package ÖvnUppg2_FunctionalInterfaceFacit;
 
 
-import StringOperatorDemo.StringOperator;
-
+@FunctionalInterface
 public interface MathOperation {
       int operation(int a, int b);
 

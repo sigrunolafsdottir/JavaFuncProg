@@ -18,7 +18,7 @@ public class MathOperationMain {
 
       //MathOperation division = ???
 
-     // System.out.println("10 + 5 = " + operate(10, 5, addition));
+    //  System.out.println("10 + 5 = " + operate(10, 5, addition));
      // System.out.println("10 - 5 = " + operate(10, 5, subtraction));
      // System.out.println("10 x 5 = " + operate(10, 5, multiplication));
      // System.out.println("10 / 5 = " + operate(10, 5, division));

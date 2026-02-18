@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 
 public class ÖvnUppg1b_map {
 
+    final List<Book> list = BookUtil.getBookList();
+
     public List<String> getAllTitles(List<Book> list){
         return list.stream().map(b -> b.getTitle())
                 .toList();
@@ -33,7 +35,7 @@ public class ÖvnUppg1b_map {
 
     public ÖvnUppg1b_map(){
 
-        List<Book> list = BookUtil.getBookList();
+
         getAllTitles(list).forEach(b -> System.out.println(b));
         System.out.println();
 
